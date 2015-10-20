@@ -1,8 +1,17 @@
 <h1>QH Form</h1>
 
-<%= simple_form_for @question, url: '/questions/create' do |f| %>
-  <%= f.input :title, label: false, placeholder: 'Title'%>
-  <br>
-  <%= f.input :text, label: false, placeholder: 'What is your question?', :input_html => {:rows => 10}%>
-  <%= f.button :submit, 'Ask' %>
+<%#= simple_form_for @question, url: '/questions/create' do |f| %>
+  <%#= f.input :title, label: false, placeholder: 'Title'%>
+  <!-- <br> -->
+  <%#= f.input :text, label: false, placeholder: 'What is your question?', :input_html => {:rows => 10}%>
+  <%#= f.button :submit, 'Ask' %>
+<%# end %>
+
+<% content_for :breadcrumb do %>
+  <li><%= link_to "Home", root_path %></li>
+  <li class="active">Examples</li>
 <% end %>
+
+<div class="row">
+  <%= render partial: 'form', layout: 'label', locals: { title: 'Basic Form' } %>
+</div>

@@ -5,10 +5,55 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+	 <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
+  <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-inner">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Simple Form & Bootstrap</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><%#= link_to "Home", root_path %></li>
+          <li><%#= link_to "Examples", examples_path %></li>
+          <li><%#= link_to "Documentation", documentation_path %></li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
-<%= yield %>
+  <div class="container master-container">
+    <ul class="breadcrumb">
+      <%= yield :breadcrumb %>
+    </ul>
+    <div class='alert alert-info fade in' data-alert='alert'>
+      <h3>
+        <strong>
+          <a href="https://github.com/plataformatec/simple_form">Simple Form</a> and <a href="http://getbootstrap.com/">Bootstrap</a> sample application.
+        </strong>
+      </h3>
+      <p>Here you'll see the usage of <a href="https://github.com/plataformatec/simple_form">Simple Form</a> and the <a href="http://getbootstrap.com/">Bootstrap</a> toolkit on a Rails 4 application.</p>
+      <p>You can check the source code on <a href='https://github.com/rafaelfranca/simple_form-bootstrap'>GitHub</a>.</p>
+    </div>
+
+    <% if notice %>
+      <div class="alert alert-success fade in" data-alert="alert">
+        <a class="close" data-dismiss='alert' href="#">×</a>
+        <p><%= notice %></p>
+      </div>
+    <% end %>
+
+    <%= yield %>
+    
+  </div>
 
 </body>
 </html>
