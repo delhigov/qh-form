@@ -6564,3 +6564,11 @@ Started GET "/assets/questions.self-b6db6055d7f02ee469f92861d6f444508582ff1f3694
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-10-21 03:25:14 -0700
+
+
+Started GET "/" for ::1 at 2015-10-21 03:29:45 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.erb (65.4ms)
+  Rendered questions/new.html.erb within layouts/application (73.2ms)
+Completed 200 OK in 299ms (Views: 279.0ms | ActiveRecord: 0.6ms)
