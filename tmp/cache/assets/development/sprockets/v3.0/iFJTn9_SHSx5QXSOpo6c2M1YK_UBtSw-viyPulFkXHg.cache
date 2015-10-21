@@ -1,0 +1,9 @@
+I"…(function() {
+  $(function() {
+    return $('#add').click(function() {
+      return console.log("hi");
+    });
+  });
+
+}).call(this);
+:ET

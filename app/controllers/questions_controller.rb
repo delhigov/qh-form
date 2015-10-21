@@ -1,7 +1,12 @@
 class QuestionsController < ApplicationController
   def create
 		question = Question.new
-		question.title = params[:title]
+
+		if @question.blank?
+			flash[:notice] = "Error! Please enter a valid question"
+		end
+
+		question.ministry = params[:ministry]
 		question.text = params[:text]
 		if !question.valid?
 			flash[:notice] = []

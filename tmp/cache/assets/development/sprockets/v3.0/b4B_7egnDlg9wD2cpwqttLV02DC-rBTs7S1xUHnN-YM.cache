@@ -1,0 +1,11 @@
+I"#(function() {
+  $(function() {
+    var addButton;
+    addButton = $('#add');
+    return addButton.click(function() {
+      return addButton.html('<%=j f.input :text, label: \'Question\', placeholder: \'What is your question?\', :input_html => {:rows => 5}%>');
+    });
+  });
+
+}).call(this);
+:ET
