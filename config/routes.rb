@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   post ':controller(/:action)'
 
   get 'home/index'
-  root 'questions#new'
+  root 'home#index'
 
   # post ':controller(/:action(/:id))'
 

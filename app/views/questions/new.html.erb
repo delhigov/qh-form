@@ -7,18 +7,6 @@
   <%#= f.button :submit, 'Ask' %>
 <%# end %>
 
-<% content_for :breadcrumb do %>
-  <li><%= link_to "Home", root_path %></li>
-  <li class="active">Examples</li>
-<% end %>
-
-<div class="text-center">
-	<h1 class="mbxs">The world’s platform for change</h1>
-	<div class="type-large">121,937,433&nbsp;people have asked a question.&nbsp;
-	</div>
-	<a href="/start-a-petition" class="btn btn-action btn-big mvl">Ask a Question</a>
-</div>
-
 <div class="row">
   <%= render partial: 'form', layout: 'label', locals: { title: 'Basic Form' } %>
 </div>
