@@ -11,9 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151021074250) do
+ActiveRecord::Schema.define(version: 20151016051421) do
 
   create_table "questions", force: :cascade do |t|
+    t.string   "title"
     t.integer  "ministry"
     t.text     "text"
     t.integer  "status"
@@ -23,16 +24,6 @@ ActiveRecord::Schema.define(version: 20151021074250) do
     t.string   "session_selected"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.string   "address"
-    t.integer  "phone"
-    t.string   "email"
-    t.integer  "citizenship"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
   end
 
 end

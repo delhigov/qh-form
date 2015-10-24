@@ -1,16 +1,20 @@
 <%= simple_form_for @question, url: '/questions/create', as: 'user_basic' do |f| %>
   <%= f.error_notification %>
 
-  <h2> <strong> Will the Minister of </strong> </h2> <%= f.input :ministry, label: false, placeholder: "Select Ministry", collection: Question.ministries %> 
+  <h3><strong>Title</strong></h3>
+  <%= f.input :title, label: false %>
 
-  <h3> <strong> be pleased to state: </strong> </h3>
-    <%= f.input :text, label: false, placeholder: 'What is your question?', :input_html => {:rows => 5}%>
+  <h3><strong>Will the Minister of</strong></h3>
+  <%= f.input :ministry, label: false, collection: Question::MINISTRIES %> 
+
+  <h3><strong> be pleased to state:</strong></h3>
+  <%= f.input :text, label: false, :input_html => {:rows => 5}%>
 
   <div id="add">
-  <p> Add Question <p>
+    <p> Add Question <p>
   </div>
-  </br>
-  </br>
-  </br>
+  <br>
+  <br>
+  <br>
   <%= f.button :submit, 'Submit' %>
 <% end %>
