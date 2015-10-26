@@ -15,13 +15,18 @@ ActiveRecord::Schema.define(version: 20151016051421) do
 
   create_table "questions", force: :cascade do |t|
     t.string   "title"
-    t.integer  "ministry"
+    t.string   "ministry"
     t.text     "text"
     t.integer  "status"
     t.text     "notes"
     t.text     "response"
     t.date     "session_date"
     t.string   "session_selected"
+    t.string   "email"
+    t.string   "city"
+    t.string   "district"
+    t.string   "state"
+    t.string   "name"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
   end
