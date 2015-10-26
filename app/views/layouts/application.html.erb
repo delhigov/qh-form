@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>Question Hour Form</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%#= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%#= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 	 <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -34,15 +34,6 @@
     <ul class="breadcrumb">
       <%= yield :breadcrumb %>
     </ul>
-<!--     <div class='alert alert-info fade in' data-alert='alert'>
-      <h3>
-        <strong>
-          <a href="https://github.com/plataformatec/simple_form">Simple Form</a> and <a href="http://getbootstrap.com/">Bootstrap</a> sample application.
-        </strong>
-      </h3>
-      <p>Here you'll see the usage of <a href="https://github.com/plataformatec/simple_form">Simple Form</a> and the <a href="http://getbootstrap.com/">Bootstrap</a> toolkit on a Rails 4 application.</p>
-      <p>You can check the source code on <a href='https://github.com/rafaelfranca/simple_form-bootstrap'>GitHub</a>.</p>
-    </div> -->
 
     <% if notice %>
       <div class="alert alert-success fade in" data-alert="alert">
