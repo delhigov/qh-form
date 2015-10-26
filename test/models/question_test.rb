@@ -1,3 +1,25 @@
+# == Schema Information
+#
+# Table name: questions
+#
+#  id               :integer          not null, primary key
+#  title            :string
+#  ministry         :string
+#  text             :text
+#  status           :integer
+#  notes            :text
+#  response         :text
+#  session_date     :date
+#  session_selected :string
+#  email            :string
+#  city             :string
+#  district         :string
+#  state            :string
+#  name             :string
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#
+
 require 'test_helper'
 
 class QuestionTest < ActiveSupport::TestCase
