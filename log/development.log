@@ -9274,3 +9274,17 @@ Started GET "/" for ::1 at 2015-10-26 15:45:07 -0700
 Processing by HomeController#index as HTML
   Rendered home/index.html.erb within layouts/application (0.9ms)
 Completed 200 OK in 17ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-30 12:38:03 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 29ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions/new" for ::1 at 2015-10-30 12:38:18 -0700
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.erb (79.8ms)
+  Rendered questions/new.html.erb within layouts/application (86.5ms)
+Completed 200 OK in 107ms (Views: 90.9ms | ActiveRecord: 0.7ms)
