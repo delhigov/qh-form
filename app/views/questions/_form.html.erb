@@ -1,4 +1,4 @@
-<%= simple_form_for @question, url: '/questions/create' do |f| %>
+<%= simple_form_for @question, url: '/questions/create', as: 'user_basic' do |f| %>
   <%= f.error_notification %>
 
   <h3><strong>Personal Information</strong></h3>
