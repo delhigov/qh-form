@@ -9303,3 +9303,68 @@ Migrating to CreateQuestions (20151016051421)
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151016051421"]]
   [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2015-10-30 19:52:46 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-30 19:52:50 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions/new" for ::1 at 2015-10-30 19:52:51 -0700
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.erb (56.8ms)
+  Rendered questions/new.html.erb within layouts/application (60.6ms)
+Completed 200 OK in 77ms (Views: 65.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/questions/user" for ::1 at 2015-10-30 19:58:23 -0700
+Processing by QuestionsController#user as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L21A7u3z6V5QFpvtmKXW5q+2P2mckBXopRAXM/ShNy6T61jRefRY2tCtkIoJn1NMXdFm9AxtxXEVT91ObWcggg==", "user_basic"=>{"name"=>"", "email"=>"", "district"=>"", "state"=>""}, "commit"=>"Next"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "questions" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-10-31 02:58:23.107947"], ["updated_at", "2015-10-31 02:58:23.107947"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2015-10-30 19:58:23 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-30 20:01:54 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions/new" for ::1 at 2015-10-30 20:01:55 -0700
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.erb (8.3ms)
+  Rendered questions/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 31ms (Views: 14.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/questions/create" for ::1 at 2015-10-30 20:01:56 -0700
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f8H4lCf8LTLjqxe2TWpWGa70wW6bTFaVT+zqdAWHEJrDR+Crs/uctmMQHNHcUNOzXJOY8wuxhgz/syAJnEEHNg==", "user_basic"=>{"name"=>"", "email"=>"", "district"=>"", "state"=>""}, "commit"=>"Next"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "questions" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2015-10-31 03:01:56.391404"], ["updated_at", "2015-10-31 03:01:56.391404"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-10-30 20:01:56 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
