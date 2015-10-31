@@ -83,5 +83,43 @@ class Question < ActiveRecord::Base
 		rejected: 'REJECTED',
 		waiting: 'WAITING'
 	}.freeze
-	
+
+	STATES = [
+		"Andhra Pradesh", 
+		"Arunachal Pradesh",
+		"Assam", 
+		"Bihar",
+		"Chandigarh", 
+		"Chattisgarh", 
+		"Delhi", 
+		"Goa", 
+		"Gujarat", 
+		"Haryana",
+		"Himachal Pradesh",
+		"Jammu And Kashmir", 
+		"Jharkhand",
+		"Karnataka",
+		"Kerala",
+		"Lakshadweep", 
+		"Madhya Pradesh",
+		"Maharashtra",
+		"Manipur",
+		"Meghalaya",
+		"Mizoram",
+		"Nagaland",
+		"No State",
+		"Odisha",
+		"Puducherry",
+		"Punjab",
+		"Rajasthan",
+		"Sikkim",
+		"Tamilnadu",
+		"Telangana",
+		"Tripura",
+		"Union Territory",
+		"Uttarakhand",
+		"Uttar Pradesh",
+		"West Bengal"
+	].freeze
+
 end
