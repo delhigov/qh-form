@@ -9289,7 +9289,6 @@ Processing by QuestionsController#new as HTML
   Rendered questions/new.html.erb within layouts/application (86.5ms)
 Completed 200 OK in 107ms (Views: 90.9ms | ActiveRecord: 0.7ms)
 
-
 Started GET "/" for ::1 at 2015-10-30 16:57:50 -0700
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by HomeController#index as HTML
@@ -10043,3 +10042,4 @@ Processing by HomeController#index as HTML
   Rendered home/index.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms)
   [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+>>>>>>> qhformkyle
