@@ -15,6 +15,7 @@ class CreateQuestions < ActiveRecord::Migration
       t.string :state
       t.string :email
       t.string :name
+      t.string :tracking_id
       t.timestamps null: false
     end
   end
