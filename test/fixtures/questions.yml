@@ -16,6 +16,7 @@
 #  district         :string
 #  state            :string
 #  name             :string
+#  tracking_id      :string
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
 #

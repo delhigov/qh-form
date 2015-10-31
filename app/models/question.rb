@@ -16,11 +16,22 @@
 #  district         :string
 #  state            :string
 #  name             :string
+#  tracking_id      :string
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
 #
 
 class Question < ActiveRecord::Base
+	before_create :create_tracking_id
+	validates_presence_of :title, :ministry, :text
+
+	# what if fail?
+	def create_tracking_id
+		begin
+			self.tracking_id = SecureRandom.hex(5)
+		end while self.class.exists?(:tracking_id => tracking_id)
+	end
+
 	MINISTRIES = [
 		"Agriculture", 
 		"Chemicals and Fertilizers", 
