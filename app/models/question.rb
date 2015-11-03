@@ -23,7 +23,7 @@
 
 class Question < ActiveRecord::Base
 	before_create :create_tracking_id
-  	validates_presence_of :title, :text, :if => lambda { |o| o.current_step == "question_form" } 
+  	validates_presence_of :title, :ministry, :text, :if => lambda { |o| o.current_step == "question_form" } 
 	attr_writer :current_step
 
   	def current_step

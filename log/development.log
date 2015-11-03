@@ -13278,3 +13278,143 @@ NoMethodError (undefined method `tracking_id=' for #<Question:0x007f8ab2b25c20>)
   Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
   Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (89.7ms)
+
+
+Started POST "/console/repl_sessions/9edcd5857f646228baba7cf7214b41bb/trace" for ::1 at 2015-11-02 20:48:39 -0800
+
+
+Started POST "/console/repl_sessions/9edcd5857f646228baba7cf7214b41bb/trace" for ::1 at 2015-11-02 20:48:43 -0800
+
+
+Started POST "/questions" for ::1 at 2015-11-02 20:49:08 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R/TD5dMM/hpRjjAo3UhK//Tk3W1VjnGyWE/85pi1cZn7ctvaRwtPntE1O09Mcs9VBoOE8MVzoSvoEDabAXNmNQ==", "question"=>{"title"=>"hi", "ministry"=>"", "text"=>"hi"}, "back_button"=>"Back"}
+  Rendered questions/_question_form.html.erb (13.2ms)
+  Rendered questions/new.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 60ms (Views: 26.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-02 20:49:35 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R/TD5dMM/hpRjjAo3UhK//Tk3W1VjnGyWE/85pi1cZn7ctvaRwtPntE1O09Mcs9VBoOE8MVzoSvoEDabAXNmNQ==", "question"=>{"title"=>"hi", "ministry"=>"", "text"=>"hi"}, "back_button"=>"Back"}
+  Rendered questions/_question_form.html.erb (10.1ms)
+  Rendered questions/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-02 20:49:38 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eyJnLtlNw1GGqXKHCaHR0dJPnbKHmj6cVp23kbmwxcfHpH8RTUpy1QYSeeCYm1R7ICjELxdn7gXmwn3sIHbSaw==", "question"=>{"title"=>"hi", "ministry"=>"", "text"=>"hi"}, "back_button"=>"Back"}
+  Rendered questions/_question_form.html.erb (10.3ms)
+  Rendered questions/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 27ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-02 20:49:41 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4yk0+OflAQvA4CEa+iRP6GzjeI+0h2o2d9ZwDa9SNXFfryzHc+Kwj0BbKn1rHspCnoQhEiR6uq/HibpwNpQi3Q==", "question"=>{"title"=>"hi", "ministry"=>"Civil Aviation", "text"=>"hi"}, "back_button"=>"Back"}
+  Rendered questions/_personal_info.erb (17.1ms)
+  Rendered questions/new.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-02 20:49:43 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+xrSnkTQqZzjs44SIG8rAOy5n/r/gFtr5XtLmE4xkjlHnMqh0NcYGGMIhXWxVa6qHt7GZ299i/JVJIHl1/eFlQ==", "question"=>{"name"=>"cat", "email"=>"cat", "district"=>"idk", "state"=>"Arunachal Pradesh"}, "commit"=>"Next"}
+  Rendered questions/_question_form.html.erb (8.9ms)
+  Rendered questions/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-02 20:49:43 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8s0K/PourE9pwRuA8xErHFhFnP/pytrpulP7Zupg/4hOSxLDbikdy+l6EOdiK662qiLFYnk3CnAKDDEbc6boJA==", "question"=>{"title"=>"hi", "ministry"=>"Civil Aviation", "text"=>"hi"}, "commit"=>"Next"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `tracking_id=' for #<Question:0x007f8ab12c5248>):
+  app/models/question.rb:63:in `create_tracking_id'
+  app/controllers/questions_controller.rb:16:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (93.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateQuestions (20151016051421)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  DROP TABLE "questions"
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20151016051421"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateQuestions (20151016051421)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "ministry" varchar, "text" text, "status" integer, "notes" text, "response" text, "session_date" date, "session_selected" varchar, "email" varchar, "city" varchar, "district" varchar, "state" varchar, "name" varchar, "tracking_id" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151016051421"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2015-11-02 20:50:20 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions/new" for ::1 at 2015-11-02 20:50:21 -0800
+Processing by QuestionsController#new as HTML
+  Rendered questions/_question_form.html.erb (6.1ms)
+  Rendered questions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 24ms (Views: 12.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-02 20:50:23 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pU5Ohk+3vR+4PXbzYEVsNDHn/kR67VHUF5odM77GxQQZyFa527AMmziGfZTxf+mew4Cn2eoQgU2nxddOJwDSqA==", "question"=>{"title"=>"hi", "ministry"=>"Civil Aviation", "text"=>"hi"}, "back_button"=>"Back"}
+  Rendered questions/_personal_info.erb (6.1ms)
+  Rendered questions/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-02 20:50:24 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L7qjTMREmo6wQDrnHmxosUTX4qQc+KDicRFKTmMnduqTPLtzUEMrCjD7MYCPVu0btrC7OYwFcHvBToAz+uFhRg==", "question"=>{"name"=>"cat", "email"=>"cat", "district"=>"idk", "state"=>"Arunachal Pradesh"}, "commit"=>"Next"}
+  Rendered questions/_question_form.html.erb (5.2ms)
+  Rendered questions/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-02 20:50:25 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9GmphQR+0XHRVcxRaGjMUAGBUj5s57gf5WoEWvoYz6lI77G6kHlg9VHuxzb5Ukn68+YLo/waaIZVNc4nY97YBQ==", "question"=>{"title"=>"hi", "ministry"=>"Civil Aviation", "text"=>"hi"}, "commit"=>"Next"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mQuestion Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1[0m  [["tracking_id", "a74e02cc19"]]
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "cat"], ["email", "cat"], ["district", "idk"], ["state", "Arunachal Pradesh"], ["title", "hi"], ["ministry", "Civil Aviation"], ["text", "hi"], ["created_at", "2015-11-03 04:50:25.059568"], ["updated_at", "2015-11-03 04:50:25.059568"], ["tracking_id", "a74e02cc19"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 40ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2015-11-02 20:50:25 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions/new" for ::1 at 2015-11-02 20:50:27 -0800
+Processing by QuestionsController#new as HTML
+  Rendered questions/_personal_info.erb (6.6ms)
+  Rendered questions/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
