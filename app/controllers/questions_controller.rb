@@ -1,37 +1,30 @@
 class QuestionsController < ApplicationController
-  def create
-		@question = Question.new
-
-		if @question.blank?
-			flash[:notice] = "Error! Please enter a valid question"
-		end
-
-		form = params[:question]
-
-		# @question.title = form[:title]
-		# @question.ministry = form[:ministry]
-		# @question.text = form[:text]
-		# if !@question.valid?
-		# 	flash[:notice] = []
-		# 	@question.errors[:question].each do |e|
-		# 		flash[:notice].push(e)
-		# 	end
-		# 	redirect_to :controller => 'questions', :action => 'question'
-		# else
-		# 	@question.save()
-		# 	redirect_to root_path
-		# end
-  end
-
   def new
-  	@question = Question.new
- #  	form = params[:question]
-	# @question.name = form[:name]
-	# @question.email = form[:email]
-	# @question.district = form[:district]
-	# @question.state = form[:state]
+    session[:question_params] ||= {}
+    @question = Question.new(session[:question_params])
+    @question.current_step = session[:question_step]
   end
 
-  
-
+def create
+    session[:question_params].deep_merge!(params[:question]) if params[:question]
+    @question = Question.new(session[:question_params])
+    @question.current_step = session[:question_step]
+    if @question.valid?
+      if params[:back_button]
+        @question.previous_step
+      elsif @question.last_step?
+        @question.save if @question.all_valid?
+      else
+        @question.next_step
+      end
+      session[:question_step] = @question.current_step
+    end
+    if @question.new_record?
+      render "new"
+    else
+      session[:question_step] = session[:question_params] = nil
+      flash[:notice] = "Question saved!"
+      redirect_to root_path
+    end
+  end
 end

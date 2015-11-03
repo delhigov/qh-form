@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
   get 'questions/new'
 
-  get 'questions/create'
-  post ':controller(/:action)'
+  # get 'questions/create'
+  # post ':controller(/:action)'
 
   get 'home/index'
   root 'home#index'
+
+  resources :questions
+
 
   # post ':controller(/:action(/:id))'
 

@@ -1,14 +1,7 @@
-<%= simple_form_for @question, url: '/questions/create', as: 'user_basic' do |f| %>
-  <%= f.error_notification %>
-
+</br>
   <h3><strong>Personal Information</strong></h3>
   <%= f.input :name, label: 'Name' %>
   <%= f.input :email, label: 'Email Address', placeholder: 'user@domain.com' %>
   <%= f.input :district, label: 'District' %>
   <%= f.input :state, label: 'State', collection: Question::STATES %>
-
-  <%= f.button :submit, 'Next' %>
 </br>
-</br>
-</br>
-<% end %>
