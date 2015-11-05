@@ -1,0 +1,16 @@
+</br>
+<h3><strong>Questions Asked</strong></h3>
+<table>
+  <tr>
+  	<th>Date</th>
+    <th>Title</th>
+    <th>Question</th>
+  </tr>
+  <% for question in @questions %>
+    <tr>
+      <td><%=h question.created_at %></td>
+      <td><%=h question.title %></td>
+      <td><%=h question.text %></td>
+    </tr>
+  <% end %>
+</table>
