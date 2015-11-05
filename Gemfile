@@ -37,6 +37,7 @@ gem 'simple_form'
 gem 'annotate'
 gem 'pdfkit'
 gem 'wkhtmltopdf-binary'
+gem 'wicked_pdf'
 
 
 group :development, :test do

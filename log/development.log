@@ -15596,3 +15596,1135 @@ NoMethodError (undefined method `mail' for #<QuestionsController:0x007f823bd14d8
   Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (103.9ms)
+
+
+Started GET "/" for ::1 at 2015-11-05 04:08:56 -0800
+Processing by HomeController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "questions"
+  Rendered home/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 31ms (Views: 23.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-11-05 04:12:11 -0800
+Processing by HomeController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "questions"[0m
+  Rendered home/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/questions/new" for ::1 at 2015-11-05 04:12:12 -0800
+
+SyntaxError (/Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:43: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/questions_controller.rb:43: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (100.5ms)
+
+
+Started GET "/questions/new" for ::1 at 2015-11-05 04:12:36 -0800
+Processing by QuestionsController#new as HTML
+  Rendered questions/_question_form.html.erb (12.6ms)
+  Rendered questions/new.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 39ms (Views: 22.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:12:38 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LZyB+K2zemf5LL+PSrkDW90rFvSL10DVEkUE9K8HeaSRGpnHObTL43mXtOjbg4bxL0xPaRsqkEyiGs6JNsFuCA==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "back_button"=>"Back"}
+  Rendered questions/_personal_info.erb (8.5ms)
+  Rendered questions/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:12:39 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnCfgaLrkZ6adYnteh5uoS1VM1q1Q2XERvntvRMe50oy9oe+NuwgGhrOgorrJOsL3zJqxyW+tV32pifAitjw5g==", "question"=>{"name"=>"", "email"=>"catherinexu1996@gmail.com", "district"=>"", "state"=>""}, "commit"=>"Next"}
+  Rendered questions/_question_form.html.erb (9.0ms)
+  Rendered questions/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:12:40 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8vlhtMyVsYUceKZxWxi5Y96DCG1wR3sc5xo5olRO/zTTf25RzXnQpTK6f5UVudPfR1VvCU8zXXDw6KbEJcsUA==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mQuestion Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1[0m  [["tracking_id", "def8f26ce6"]]
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:12:40.488392"], ["updated_at", "2015-11-05 12:12:40.488392"], ["tracking_id", "def8f26ce6"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:37)
+
+QuestionMailer#send_report: processed outbound mail in 6.5ms
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 3.0ms)
+
+ActionView::MissingTemplate (Missing template question_mailer/send_report, application_mailer/send_report with {:locale=>[:en], :formats=>[:text], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/CatherineXu/projects/qh-form/app/views"
+):
+  app/mailers/question_mailer.rb:6:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:37:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (16.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (63.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (39.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (90.7ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:14:39 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8vlhtMyVsYUceKZxWxi5Y96DCG1wR3sc5xo5olRO/zTTf25RzXnQpTK6f5UVudPfR1VvCU8zXXDw6KbEJcsUA==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mQuestion Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1[0m  [["tracking_id", "1b6c18b46d"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:14:39.018776"], ["updated_at", "2015-11-05 12:14:39.018776"], ["tracking_id", "1b6c18b46d"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:37)
+  Rendered question_mailer/send_report.text.erb within layouts/mailer (0.5ms)
+
+QuestionMailer#send_report: processed outbound mail in 5.6ms
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.3ms)
+
+TypeError (String can't be coerced into Fixnum):
+  app/mailers/question_mailer.rb:8:in `+'
+  app/mailers/question_mailer.rb:8:in `block (2 levels) in send_report'
+  app/mailers/question_mailer.rb:7:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:37:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (44.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (94.4ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:15:25 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8vlhtMyVsYUceKZxWxi5Y96DCG1wR3sc5xo5olRO/zTTf25RzXnQpTK6f5UVudPfR1VvCU8zXXDw6KbEJcsUA==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mQuestion Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1[0m  [["tracking_id", "1852c041df"]]
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:15:25.343149"], ["updated_at", "2015-11-05 12:15:25.343149"], ["tracking_id", "1852c041df"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:37)
+  Rendered question_mailer/send_report.text.erb within layouts/mailer (0.0ms)
+
+QuestionMailer#send_report: processed outbound mail in 6.8ms
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 2.5ms)
+
+NameError (uninitialized constant QuestionMailer::WickedPdf):
+  app/mailers/question_mailer.rb:8:in `block (2 levels) in send_report'
+  app/mailers/question_mailer.rb:7:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:37:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (44.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (99.3ms)
+
+
+Started GET "/questions" for ::1 at 2015-11-05 04:17:52 -0800
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 9ms (ActiveRecord: 1.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Question with 'id'=):
+  app/controllers/questions_controller.rb:7:in `index'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (106.4ms)
+
+
+Started GET "/questions" for ::1 at 2015-11-05 04:17:56 -0800
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Question with 'id'=):
+  app/controllers/questions_controller.rb:7:in `index'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (39.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (88.4ms)
+
+
+Started GET "/" for ::1 at 2015-11-05 04:17:59 -0800
+Processing by HomeController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "questions"
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/new" for ::1 at 2015-11-05 04:18:00 -0800
+Processing by QuestionsController#new as HTML
+  Rendered questions/_question_form.html.erb (15.3ms)
+  Rendered questions/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 40ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:18:03 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PoYmK5bOxgb8GX3lmVFoT35eoWyhKYUrGqLhjC8aMSaCAD4UAsl3gnyidoIIa+3ljDn48THUVbKq/Svxttwmig==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.2ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "2ec13a87e4"]]
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:18:03.227301"], ["updated_at", "2015-11-05 12:18:03.227301"], ["tracking_id", "2ec13a87e4"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:37)
+  Rendered question_mailer/send_report.text.erb within layouts/mailer (0.1ms)
+
+QuestionMailer#send_report: processed outbound mail in 8.8ms
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 2.7ms)
+
+NameError (uninitialized constant QuestionMailer::WickedPdf):
+  app/mailers/question_mailer.rb:8:in `block (2 levels) in send_report'
+  app/mailers/question_mailer.rb:7:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:37:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (40.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (89.3ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:20:58 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PoYmK5bOxgb8GX3lmVFoT35eoWyhKYUrGqLhjC8aMSaCAD4UAsl3gnyidoIIa+3ljDn48THUVbKq/Svxttwmig==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.2ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "e9dbc2dfa6"]]
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:20:59.095224"], ["updated_at", "2015-11-05 12:20:59.095224"], ["tracking_id", "e9dbc2dfa6"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:37)
+  Rendered question_mailer/send_report.text.erb within layouts/mailer (0.2ms)
+
+QuestionMailer#send_report: processed outbound mail in 10.7ms
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 3.7ms)
+
+NameError (uninitialized constant QuestionMailer::WickedPdf):
+  app/mailers/question_mailer.rb:8:in `block (2 levels) in send_report'
+  app/mailers/question_mailer.rb:7:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:37:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (45.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (104.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:21:39 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PoYmK5bOxgb8GX3lmVFoT35eoWyhKYUrGqLhjC8aMSaCAD4UAsl3gnyidoIIa+3ljDn48THUVbKq/Svxttwmig==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.4ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "7e0add5d21"]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:21:39.141739"], ["updated_at", "2015-11-05 12:21:39.141739"], ["tracking_id", "7e0add5d21"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:37)
+  Rendered question_mailer/send_report.text.erb within layouts/mailer (0.2ms)
+
+QuestionMailer#send_report: processed outbound mail in 6.5ms
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 1.9ms)
+
+NameError (uninitialized constant QuestionMailer::WickedPdf):
+  app/mailers/question_mailer.rb:8:in `block (2 levels) in send_report'
+  app/mailers/question_mailer.rb:7:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:37:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (20.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (13.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (115.5ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:21:42 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PoYmK5bOxgb8GX3lmVFoT35eoWyhKYUrGqLhjC8aMSaCAD4UAsl3gnyidoIIa+3ljDn48THUVbKq/Svxttwmig==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.2ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "78f4d7d470"]]
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:21:42.491496"], ["updated_at", "2015-11-05 12:21:42.491496"], ["tracking_id", "78f4d7d470"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:37)
+  Rendered question_mailer/send_report.text.erb within layouts/mailer (0.1ms)
+
+QuestionMailer#send_report: processed outbound mail in 6.5ms
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 3.2ms)
+
+NameError (uninitialized constant QuestionMailer::WickedPdf):
+  app/mailers/question_mailer.rb:8:in `block (2 levels) in send_report'
+  app/mailers/question_mailer.rb:7:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:37:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (40.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (88.8ms)
+
+
+Started GET "/questions/new" for ::1 at 2015-11-05 04:25:00 -0800
+Processing by QuestionsController#new as HTML
+  Rendered questions/_question_form.html.erb (6.9ms)
+  Rendered questions/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 26ms (Views: 13.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:25:01 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.2ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "633cf3dd50"]]
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:25:01.820020"], ["updated_at", "2015-11-05 12:25:01.820020"], ["tracking_id", "633cf3dd50"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.4ms)
+
+ActionView::MissingTemplate (Missing template questions/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/CatherineXu/projects/qh-form/app/views"
+):
+  app/controllers/questions_controller.rb:37:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (54.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (39.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (92.1ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:26:42 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.3ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "d5e8d04cbe"]]
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:26:42.463293"], ["updated_at", "2015-11-05 12:26:42.463293"], ["tracking_id", "d5e8d04cbe"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  Rendered questions/create.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 2.6ms)
+
+NameError (uninitialized constant QuestionsController::Sendpdf):
+  app/controllers/questions_controller.rb:38:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (44.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (99.5ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:29:20 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.2ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "074e902dac"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:29:20.648105"], ["updated_at", "2015-11-05 12:29:20.648105"], ["tracking_id", "074e902dac"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:37)
+  Rendered question_mailer/send_report.text.erb within layouts/mailer (0.0ms)
+
+QuestionMailer#send_report: processed outbound mail in 6.2ms
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 2.0ms)
+
+NameError (uninitialized constant QuestionMailer::WickedPdf):
+  app/mailers/question_mailer.rb:8:in `block (2 levels) in send_report'
+  app/mailers/question_mailer.rb:7:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:37:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (42.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (94.8ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:32:52 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.2ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "2c5a234988"]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:32:52.893652"], ["updated_at", "2015-11-05 12:32:52.893652"], ["tracking_id", "2c5a234988"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:37)
+  Rendered question_mailer/send_report.text.erb within layouts/mailer (0.0ms)
+
+QuestionMailer#send_report: processed outbound mail in 5.7ms
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 2.0ms)
+
+NameError (uninitialized constant QuestionMailer::WickedPdf):
+  app/mailers/question_mailer.rb:8:in `block (2 levels) in send_report'
+  app/mailers/question_mailer.rb:7:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:37:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (54.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (107.8ms)
+
+
+Started POST "/console/repl_sessions/9fef0cf9be97b8a65d8218651a52e79f/trace" for ::1 at 2015-11-05 04:33:03 -0800
+
+
+Started POST "/console/repl_sessions/9fef0cf9be97b8a65d8218651a52e79f/trace" for ::1 at 2015-11-05 04:33:08 -0800
+
+
+Started POST "/console/repl_sessions/9fef0cf9be97b8a65d8218651a52e79f/trace" for ::1 at 2015-11-05 04:33:10 -0800
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:35:24 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.1ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "ca18a82072"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:35:24.233418"], ["updated_at", "2015-11-05 12:35:24.233418"], ["tracking_id", "ca18a82072"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:37)
+  Rendered question_mailer/send_report.text.erb within layouts/mailer (0.1ms)
+
+QuestionMailer#send_report: processed outbound mail in 5.8ms
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.2ms)
+
+NameError (uninitialized constant QuestionMailer::WickedPdf):
+  app/mailers/question_mailer.rb:8:in `block (2 levels) in send_report'
+  app/mailers/question_mailer.rb:7:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:37:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (49.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (103.4ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:35:27 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.1ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "4061999dea"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:35:27.170200"], ["updated_at", "2015-11-05 12:35:27.170200"], ["tracking_id", "4061999dea"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:37)
+  Rendered question_mailer/send_report.text.erb within layouts/mailer (0.1ms)
+
+QuestionMailer#send_report: processed outbound mail in 7.5ms
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.2ms)
+
+NameError (uninitialized constant QuestionMailer::WickedPdf):
+  app/mailers/question_mailer.rb:8:in `block (2 levels) in send_report'
+  app/mailers/question_mailer.rb:7:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:37:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (39.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (85.8ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:35:47 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.1ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "9d8e661f80"]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:35:47.306352"], ["updated_at", "2015-11-05 12:35:47.306352"], ["tracking_id", "9d8e661f80"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:37)
+  Rendered question_mailer/send_report.text.erb within layouts/mailer (0.0ms)
+
+QuestionMailer#send_report: processed outbound mail in 4.6ms
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.3ms)
+
+NameError (uninitialized constant QuestionMailer::WickedPdf):
+  app/mailers/question_mailer.rb:8:in `block (2 levels) in send_report'
+  app/mailers/question_mailer.rb:7:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:37:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (99.4ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:35:49 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.1ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "91f279d478"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:35:49.744417"], ["updated_at", "2015-11-05 12:35:49.744417"], ["tracking_id", "91f279d478"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:37)
+  Rendered question_mailer/send_report.text.erb within layouts/mailer (0.0ms)
+
+QuestionMailer#send_report: processed outbound mail in 5.3ms
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 2.0ms)
+
+NameError (uninitialized constant QuestionMailer::WickedPdf):
+  app/mailers/question_mailer.rb:8:in `block (2 levels) in send_report'
+  app/mailers/question_mailer.rb:7:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:37:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (38.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (84.4ms)
+
+
+Started PUT "/console/repl_sessions/132bc009918b10f0b871756b2546e941" for ::1 at 2015-11-05 04:36:28 -0800
+
+
+Started PUT "/console/repl_sessions/132bc009918b10f0b871756b2546e941" for ::1 at 2015-11-05 04:36:41 -0800
+
+
+Started PUT "/console/repl_sessions/132bc009918b10f0b871756b2546e941" for ::1 at 2015-11-05 04:36:45 -0800
+
+
+Started PUT "/console/repl_sessions/132bc009918b10f0b871756b2546e941" for ::1 at 2015-11-05 04:36:45 -0800
+
+
+Started PUT "/console/repl_sessions/132bc009918b10f0b871756b2546e941" for ::1 at 2015-11-05 04:37:38 -0800
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:38:30 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.2ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "6818d6a60f"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:38:30.246235"], ["updated_at", "2015-11-05 12:38:30.246235"], ["tracking_id", "6818d6a60f"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:26)
+  Rendered question_mailer/send_report.text.erb within layouts/mailer (0.0ms)
+
+QuestionMailer#send_report: processed outbound mail in 6.0ms
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 1.9ms)
+
+NameError (uninitialized constant QuestionMailer::WickedPdf):
+  app/mailers/question_mailer.rb:8:in `block (2 levels) in send_report'
+  app/mailers/question_mailer.rb:7:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:26:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (40.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (90.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:39:46 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.2ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "2f16ee26e9"]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:39:46.979646"], ["updated_at", "2015-11-05 12:39:46.979646"], ["tracking_id", "2f16ee26e9"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:26)
+  Rendered question_mailer/send_report.text.erb within layouts/mailer (0.0ms)
+
+QuestionMailer#send_report: processed outbound mail in 6.3ms
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 1.8ms)
+
+NameError (uninitialized constant QuestionMailer::WickedPdf):
+  app/mailers/question_mailer.rb:8:in `block (2 levels) in send_report'
+  app/mailers/question_mailer.rb:7:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:26:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (45.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (99.1ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:41:56 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.2ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "e210036267"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:41:56.969040"], ["updated_at", "2015-11-05 12:41:56.969040"], ["tracking_id", "e210036267"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:26)
+  Rendered question_mailer/send_report.text.erb within layouts/mailer (0.0ms)
+
+QuestionMailer#send_report: processed outbound mail in 6.9ms
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 2.7ms)
+
+NameError (uninitialized constant QuestionMailer::Wicked_Pdf):
+  app/mailers/question_mailer.rb:8:in `block (2 levels) in send_report'
+  app/mailers/question_mailer.rb:7:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:26:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (42.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (97.4ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:43:04 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.2ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "4032f7896a"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:43:04.348604"], ["updated_at", "2015-11-05 12:43:04.348604"], ["tracking_id", "4032f7896a"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:26)
+  Rendered question_mailer/send_report.text.erb within layouts/mailer (0.1ms)
+
+QuestionMailer#send_report: processed outbound mail in 6.7ms
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 1.7ms)
+
+NameError (uninitialized constant QuestionMailer::WickedPdf):
+  app/mailers/question_mailer.rb:8:in `block (2 levels) in send_report'
+  app/mailers/question_mailer.rb:7:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:26:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (95.7ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:43:29 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.2ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "050eeb5ad7"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:43:29.151102"], ["updated_at", "2015-11-05 12:43:29.151102"], ["tracking_id", "050eeb5ad7"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:26)
+  Rendered question_mailer/send_report.text.erb within layouts/mailer (0.0ms)
+
+QuestionMailer#send_report: processed outbound mail in 5.8ms
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.2ms)
+
+NameError (uninitialized constant QuestionMailer::WickedPdf):
+  app/mailers/question_mailer.rb:8:in `block (2 levels) in send_report'
+  app/mailers/question_mailer.rb:7:in `block in send_report'
+  app/mailers/question_mailer.rb:5:in `send_report'
+  app/controllers/questions_controller.rb:26:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (41.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (92.2ms)
+
+
+Started POST "/console/repl_sessions/5c1d0c5c6379d052c966e2fc41e1bd3a/trace" for ::1 at 2015-11-05 04:43:40 -0800
+
+
+Started POST "/console/repl_sessions/5c1d0c5c6379d052c966e2fc41e1bd3a/trace" for ::1 at 2015-11-05 04:43:41 -0800
+
+
+Started POST "/console/repl_sessions/5c1d0c5c6379d052c966e2fc41e1bd3a/trace" for ::1 at 2015-11-05 04:43:50 -0800
+
+
+Started POST "/console/repl_sessions/5c1d0c5c6379d052c966e2fc41e1bd3a/trace" for ::1 at 2015-11-05 04:43:53 -0800
+
+
+Started POST "/console/repl_sessions/5c1d0c5c6379d052c966e2fc41e1bd3a/trace" for ::1 at 2015-11-05 04:43:54 -0800
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:45:41 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.2ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "43a575617b"]]
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:45:41.817528"], ["updated_at", "2015-11-05 12:45:41.817528"], ["tracking_id", "43a575617b"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 406 Not Acceptable in 22ms (ActiveRecord: 2.2ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/questions_controller.rb:27:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (40.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (89.2ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:48:38 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.2ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "c1ec646fbc"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:48:38.969668"], ["updated_at", "2015-11-05 12:48:38.969668"], ["tracking_id", "c1ec646fbc"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 406 Not Acceptable in 19ms (ActiveRecord: 1.7ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/questions_controller.rb:27:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (111.7ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:48:50 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.2ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "3bf44e44ea"]]
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:48:50.803219"], ["updated_at", "2015-11-05 12:48:50.803219"], ["tracking_id", "3bf44e44ea"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 4.2ms)
+
+SyntaxError (/Users/CatherineXu/projects/qh-form/app/mailers/question_mailer.rb:12: syntax error, unexpected '}', expecting =>
+/Users/CatherineXu/projects/qh-form/app/mailers/question_mailer.rb:19: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/mailers/question_mailer.rb:12: syntax error, unexpected '}', expecting =>
+  app/mailers/question_mailer.rb:19: syntax error, unexpected keyword_end, expecting end-of-input
+  app/controllers/questions_controller.rb:26:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (19.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (45.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (97.6ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:52:10 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.3ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "dabdc34136"]]
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:52:10.306628"], ["updated_at", "2015-11-05 12:52:10.306628"], ["tracking_id", "dabdc34136"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 2.9ms)
+
+SyntaxError (/Users/CatherineXu/projects/qh-form/app/mailers/question_mailer.rb:13: syntax error, unexpected '}', expecting =>
+/Users/CatherineXu/projects/qh-form/app/mailers/question_mailer.rb:18: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/mailers/question_mailer.rb:13: syntax error, unexpected '}', expecting =>
+  app/mailers/question_mailer.rb:18: syntax error, unexpected keyword_end, expecting end-of-input
+  app/controllers/questions_controller.rb:26:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (39.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (94.6ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:53:06 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.2ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "6e6cf3c69f"]]
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:53:06.266769"], ["updated_at", "2015-11-05 12:53:06.266769"], ["tracking_id", "6e6cf3c69f"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 2.4ms)
+
+SyntaxError (/Users/CatherineXu/projects/qh-form/app/mailers/question_mailer.rb:12: syntax error, unexpected '}', expecting =>
+/Users/CatherineXu/projects/qh-form/app/mailers/question_mailer.rb:18: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/mailers/question_mailer.rb:12: syntax error, unexpected '}', expecting =>
+  app/mailers/question_mailer.rb:18: syntax error, unexpected keyword_end, expecting end-of-input
+  app/controllers/questions_controller.rb:26:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (103.1ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:53:26 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.6ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "0cdfcc2ced"]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:53:26.370460"], ["updated_at", "2015-11-05 12:53:26.370460"], ["tracking_id", "0cdfcc2ced"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 2.2ms)
+
+SyntaxError (/Users/CatherineXu/projects/qh-form/app/mailers/question_mailer.rb:12: syntax error, unexpected '}', expecting =>
+/Users/CatherineXu/projects/qh-form/app/mailers/question_mailer.rb:18: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/mailers/question_mailer.rb:12: syntax error, unexpected '}', expecting =>
+  app/mailers/question_mailer.rb:18: syntax error, unexpected keyword_end, expecting end-of-input
+  app/controllers/questions_controller.rb:26:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (47.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (102.3ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:53:42 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.4ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "5bd1239b93"]]
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:53:42.246968"], ["updated_at", "2015-11-05 12:53:42.246968"], ["tracking_id", "5bd1239b93"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 2.4ms)
+
+SyntaxError (/Users/CatherineXu/projects/qh-form/app/mailers/question_mailer.rb:12: syntax error, unexpected '}', expecting =>):
+  app/mailers/question_mailer.rb:12: syntax error, unexpected '}', expecting =>
+  app/controllers/questions_controller.rb:26:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (96.7ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:54:46 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.5ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "8f1b650aa1"]]
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:54:46.837410"], ["updated_at", "2015-11-05 12:54:46.837410"], ["tracking_id", "8f1b650aa1"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 2.5ms)
+
+SyntaxError (/Users/CatherineXu/projects/qh-form/app/mailers/question_mailer.rb:12: syntax error, unexpected =>, expecting ')'
+...'questions/index.html.erb'), => :hash_with_wickedpdf_options 
+...                               ^
+/Users/CatherineXu/projects/qh-form/app/mailers/question_mailer.rb:13: syntax error, unexpected ')', expecting keyword_end):
+  app/mailers/question_mailer.rb:12: syntax error, unexpected =>, expecting ')'
+  app/mailers/question_mailer.rb:13: syntax error, unexpected ')', expecting keyword_end
+  app/controllers/questions_controller.rb:26:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (101.0ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:55:04 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.2ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "97353ad871"]]
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:55:04.933517"], ["updated_at", "2015-11-05 12:55:04.933517"], ["tracking_id", "97353ad871"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 2.8ms)
+
+SyntaxError (/Users/CatherineXu/projects/qh-form/app/mailers/question_mailer.rb:12: syntax error, unexpected =>, expecting ')'
+...'questions/index.html.erb'), => :hash_with_wickedpdf_options...
+...                               ^):
+  app/mailers/question_mailer.rb:12: syntax error, unexpected =>, expecting ')'
+  app/controllers/questions_controller.rb:26:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (95.0ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 04:55:33 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6SQS1EWYP5kw8KVIFy5IeQr+yTrXpQn22J6SUWZZI8PIoh0xRHReuR4yfKxZjyLFkyiuXujRL5rPbA03F9zIw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Exists (0.2ms)[0m  SELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1  [["tracking_id", "3f44f59f70"]]
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 12:55:33.905704"], ["updated_at", "2015-11-05 12:55:33.905704"], ["tracking_id", "3f44f59f70"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:26)
+
+QuestionMailer#send_report: processed outbound mail in 2.7ms
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 4.2ms)
+
+NameError (uninitialized constant QuestionMailer::WickedPdf):
+  app/mailers/question_mailer.rb:11:in `send_report'
+  app/controllers/questions_controller.rb:26:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (42.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (95.0ms)

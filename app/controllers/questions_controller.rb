@@ -22,6 +22,9 @@ def create
         @question.previous_step
       elsif @question.last_step?
         @question.save if @question.all_valid?
+        if @question.email? 
+      		QuestionMailer.send_report(@question).deliver
+      	end
       else
         @question.next_step
       end
@@ -33,16 +36,6 @@ def create
     else
       session[:question_step] = session[:question_params] = nil
       flash[:notice] = "Question saved!"
-      if @question.email?
-      	 mail(:to => @question.email, :subject => "awesome pdf, check it") do |format|
-    		format.text # renders send_report.text.erb for body of email
-    		format.pdf do
-      			attachments['MyPDF.pdf'] = WickedPdf.new.pdf_from_string(
-        		render_to_string(:pdf => 'MyPDF',:template => 'reports/show.pdf.erb')
-      		)
-      		end
-    	end
- 	end
       redirect_to root_path
     end
 end
