@@ -1,4 +1,12 @@
 class QuestionsController < ApplicationController
+  def index
+    @orders = Order.all
+  end
+  
+  def show
+    @question = Question.find(params[:id])
+  end
+
   def new
     session[:question_params] ||= {}
     @question = Question.new(session[:question_params])
