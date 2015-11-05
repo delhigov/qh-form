@@ -3,13 +3,17 @@
 <table>
   <tr>
   	<th></th>
+  	<th></th>
   	<th>Date</th>
     <th>Title</th>
     <th>Question</th>
   </tr>
   <% for question in @questions %>
     <tr>
-      <td><%= link_to "View Complete", controller: "questions", action: "index", id: question.id %></a></td>
+      <td><%= link_to "View as HTML", controller: "questions", action: "index", id: question.id %></a></td>
+      <td>
+      	<%= link_to "View as PDF", controller: "questions", action: "index", id: question.id, :format => "pdf" %>
+      </td>
       <td><%=h question.created_at %></td>
       <td><%=h question.title %></td>
       <td><%=h question.text %></td>

@@ -15229,3 +15229,88 @@ Processing by HomeController#index as HTML
   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "questions"
   Rendered home/index.html.erb within layouts/application (0.8ms)
 Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/new" for ::1 at 2015-11-05 03:32:08 -0800
+Processing by QuestionsController#new as HTML
+  Rendered questions/_personal_info.erb (16.1ms)
+  Rendered questions/new.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-05 03:32:12 -0800
+Processing by HomeController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "questions"[0m
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/questions/show" for ::1 at 2015-11-05 03:35:46 -0800
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 70ms (Views: 67.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/show.pdf" for ::1 at 2015-11-05 03:35:49 -0800
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions?id=1" for ::1 at 2015-11-05 03:36:50 -0800
+Processing by QuestionsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered questions/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/show" for ::1 at 2015-11-05 03:37:34 -0800
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/show" for ::1 at 2015-11-05 03:37:43 -0800
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/show" for ::1 at 2015-11-05 03:37:49 -0800
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/show" for ::1 at 2015-11-05 03:41:46 -0800
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mQuestion Load (0.9ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/show.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 31ms (Views: 24.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/questions.pdf?id=2" for ::1 at 2015-11-05 03:41:48 -0800
+Processing by QuestionsController#index as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.7ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered questions/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-11-05 03:41:54 -0800
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "questions"
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.2ms)
