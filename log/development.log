@@ -15314,3 +15314,285 @@ Processing by HomeController#index as HTML
   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "questions"
   Rendered home/index.html.erb within layouts/application (2.5ms)
 Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-05 03:43:19 -0800
+Processing by HomeController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "questions"[0m
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/show" for ::1 at 2015-11-05 03:45:18 -0800
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions?id=1" for ::1 at 2015-11-05 03:45:19 -0800
+Processing by QuestionsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered questions/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions?id=1" for ::1 at 2015-11-05 03:45:56 -0800
+Processing by QuestionsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered questions/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-11-05 03:46:02 -0800
+Processing by HomeController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "questions"[0m
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/show" for ::1 at 2015-11-05 03:46:04 -0800
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/questions?id=1" for ::1 at 2015-11-05 03:46:06 -0800
+Processing by QuestionsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered questions/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions?id=1" for ::1 at 2015-11-05 03:46:28 -0800
+Processing by QuestionsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered questions/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions?id=1" for ::1 at 2015-11-05 03:46:59 -0800
+Processing by QuestionsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered questions/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions?id=1" for ::1 at 2015-11-05 03:47:14 -0800
+Processing by QuestionsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered questions/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-11-05 03:47:21 -0800
+Processing by HomeController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "questions"[0m
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/new" for ::1 at 2015-11-05 03:47:24 -0800
+Processing by QuestionsController#new as HTML
+  Rendered questions/_personal_info.erb (18.9ms)
+  Rendered questions/new.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-05 03:47:28 -0800
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "questions"
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-05 03:48:06 -0800
+Processing by HomeController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "questions"[0m
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-11-05 03:48:17 -0800
+Processing by HomeController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "questions"
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `examples_path' for #<#<Class:0x007f82402d90f0>:0x007f823c63aa90>):
+    23:         </div>
+    24:         <ul class="nav navbar-nav">
+    25:           <li><%= link_to "Home", root_path %></li>
+    26:           <li><%= link_to "Examples", examples_path %></li>
+    27:           <li><%= link_to "Documentation", documentation_path %></li>
+    28:         </ul>
+    29:       </div>
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__3650073969393929672_70098667804720'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (45.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (102.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-05 03:54:02 -0800
+Processing by HomeController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "questions"[0m
+  Rendered home/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 37ms (Views: 28.0ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/questions/new" for ::1 at 2015-11-05 03:54:04 -0800
+
+SyntaxError (/Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:41: syntax error, unexpected keyword_end, expecting ')'
+/Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:47: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/questions_controller.rb:41: syntax error, unexpected keyword_end, expecting ')'
+  app/controllers/questions_controller.rb:47: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (45.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (97.5ms)
+
+
+Started GET "/questions/new" for ::1 at 2015-11-05 03:54:53 -0800
+
+SyntaxError (/Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:42: syntax error, unexpected keyword_end, expecting ')'
+/Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:47: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/questions_controller.rb:42: syntax error, unexpected keyword_end, expecting ')'
+  app/controllers/questions_controller.rb:47: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (95.5ms)
+
+
+Started GET "/questions/new" for ::1 at 2015-11-05 03:55:06 -0800
+
+SyntaxError (/Users/CatherineXu/projects/qh-form/app/controllers/questions_controller.rb:48: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/questions_controller.rb:48: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (44.8ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (96.7ms)
+
+
+Started GET "/questions/new" for ::1 at 2015-11-05 03:55:12 -0800
+Processing by QuestionsController#new as HTML
+  Rendered questions/_personal_info.erb (11.5ms)
+  Rendered questions/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 34ms (Views: 18.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 03:55:14 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O/NkO09iAcz4qwPrrGWqvU8VJMbHdHws/b99PDUSD1SHdXwE22WwSHgQCIw9Xy8XvXJ9W1eJrLVN4LdBrNQY+A==", "question"=>{"name"=>"", "email"=>"", "district"=>"", "state"=>""}, "commit"=>"Next"}
+  Rendered questions/_question_form.html.erb (5.8ms)
+  Rendered questions/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 22ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 03:55:15 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w5xaprQ9Lup1CW24+IsR2XijAuC6v9LSaoZToso+mEx/GkKZIDqfbvWyZt9psZRzisRbfSpCAkva2ZnfU/iP4A==", "question"=>{"title"=>"", "ministry"=>"", "text"=>""}, "commit"=>"Submit"}
+  Rendered questions/_question_form.html.erb (6.0ms)
+  Rendered questions/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 16ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 03:55:19 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LW3BARlWj38hxVMRs8GzAuPnejdVHQ92UXk/SLzOBDSR69k+jVE++6F+WHYi+zaoEYAjqsXg3+/hJvU1JQgTmA==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>""}, "back_button"=>"Back"}
+  Rendered questions/_question_form.html.erb (18.3ms)
+  Rendered questions/new.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 31ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 03:55:21 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fbJPmHpJtTNUkeYXB4DlPeNEIxxQbrlVD+6Ara27xePBNFen7k4Et9Qq7XCWumCXESN6gcCTacy/sUrQNH3STw==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "back_button"=>"Back"}
+  Rendered questions/_personal_info.erb (30.6ms)
+  Rendered questions/new.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 03:55:28 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uHD1ItothIEkW81U1WOoeqnlg8i4n2ZEZ2fCCNMc0GUE9u0dTio1BaTgxjNEWS3QW4LaVShitt3XOAh1StrHyQ==", "question"=>{"name"=>"", "email"=>"catherinexu1996@gmail.com", "district"=>"", "state"=>""}, "commit"=>"Next"}
+  Rendered questions/_question_form.html.erb (5.4ms)
+  Rendered questions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-05 03:55:29 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IjPNDLlGeu3Oe2OxOgo/Uh1IyqAznQEqpFaGTnvzqy2etdUzLUHLaU7AaNarMLr47y+TPaNg0bMUCUwz4jW8gQ==", "question"=>{"title"=>"asdfadfadf", "ministry"=>"Coal", "text"=>"adfadfa"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mQuestion Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "questions" WHERE "questions"."tracking_id" = ? LIMIT 1[0m  [["tracking_id", "34919ba3c4"]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("name", "email", "district", "state", "title", "ministry", "text", "created_at", "updated_at", "tracking_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", ""], ["email", "catherinexu1996@gmail.com"], ["district", ""], ["state", ""], ["title", "asdfadfadf"], ["ministry", "Coal"], ["text", "adfadfa"], ["created_at", "2015-11-05 11:55:29.303009"], ["updated_at", "2015-11-05 11:55:29.303009"], ["tracking_id", "34919ba3c4"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 2.3ms)
+
+NoMethodError (undefined method `mail' for #<QuestionsController:0x007f823bd14d80>):
+  app/controllers/questions_controller.rb:37:in `create'
+
+
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.2ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.9ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (41.4ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (103.9ms)

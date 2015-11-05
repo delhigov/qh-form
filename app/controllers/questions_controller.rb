@@ -27,12 +27,23 @@ def create
       end
       session[:question_step] = @question.current_step
     end
+
     if @question.new_record?
       render "new"
     else
       session[:question_step] = session[:question_params] = nil
       flash[:notice] = "Question saved!"
+      if @question.email?
+      	 mail(:to => @question.email, :subject => "awesome pdf, check it") do |format|
+    		format.text # renders send_report.text.erb for body of email
+    		format.pdf do
+      			attachments['MyPDF.pdf'] = WickedPdf.new.pdf_from_string(
+        		render_to_string(:pdf => 'MyPDF',:template => 'reports/show.pdf.erb')
+      		)
+      		end
+    	end
+ 	end
       redirect_to root_path
     end
-  end
+end
 end

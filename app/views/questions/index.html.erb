@@ -1,7 +1,6 @@
 </br>
 <h3><strong>Question Details</strong></h3>
 <p>Question was asked on: <%= @question.created_at %><p>
-<h3>Question Title: </h3><%= @question.title %></p>
-<h3>Ministry: </h3><%= @question.ministry %></p>
-<h3>Question: </h3><p><%= @question.text %></p>
+<p><strong>Question Title: </strong><%= @question.title %></p>
+<p> Will the Minister of <%= @question.ministry.upcase %> be pleased to state: </br> <%= @question.text %></p>
 
