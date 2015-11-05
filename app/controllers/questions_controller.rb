@@ -3,6 +3,10 @@ class QuestionsController < ApplicationController
     @questions = Question.all
   end
 
+  def index
+  	@question = Question.find(params[:id])
+  end
+
   def new
     session[:question_params] ||= {}
     @question = Question.new(session[:question_params])
