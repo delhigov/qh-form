@@ -1,7 +1,0 @@
-I"X(function() {
-  $(function() {
-    return console.log("HI");
-  });
-
-}).call(this);
-:ET
