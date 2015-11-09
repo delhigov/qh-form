@@ -16728,3 +16728,41 @@ NameError (uninitialized constant QuestionMailer::WickedPdf):
   Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/CatherineXu/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (95.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-07 21:56:03 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "questions"
+  Rendered home/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 26ms (Views: 15.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/questions/new" for ::1 at 2015-11-07 21:56:18 -0800
+Processing by QuestionsController#new as HTML
+  Rendered questions/_question_form.html.erb (17.5ms)
+  Rendered questions/new.html.erb within layouts/application (63.9ms)
+Completed 200 OK in 87ms (Views: 69.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-07 21:56:25 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cFmzxaR5ri3pXoHf7jHWFMf+RdJsKsTH//7K58Lkp5PM36v6MH4fqWnlirh/C1O+NZkcT/zXFF5PoQCaWyKwPw==", "question"=>{"title"=>"asdf", "ministry"=>"Coal", "text"=>"adfadfa"}, "back_button"=>"Back"}
+  Rendered questions/_personal_info.erb (31.5ms)
+  Rendered questions/new.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 49ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for ::1 at 2015-11-07 21:56:33 -0800
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P/YUYgJHOR1Q9outq4aZkbAO7qbwBtHIA1Enbb3q9ZeDcAxdlkCImdBNgMo6vBw7Qmm3O2D7AVGzDu0QJCziOw==", "question"=>{"name"=>"", "email"=>"catherinexu1996@gmail.com", "district"=>"", "state"=>""}, "commit"=>"Next"}
+  Rendered questions/_question_form.html.erb (6.8ms)
+  Rendered questions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-07 21:56:50 -0800
+Processing by HomeController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "questions"[0m
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms)
