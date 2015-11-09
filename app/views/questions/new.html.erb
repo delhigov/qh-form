@@ -5,5 +5,4 @@
    	<%= f.button :submit, 'Back', name: "back_button" unless @question.first_step? %>
     <%= f.button :submit, 'Next' unless @question.last_step? %>
     <%= f.button :submit, 'Submit' if @question.last_step? %> 
-
 <% end %>

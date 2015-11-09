@@ -1,10 +1,11 @@
 </br>
   <h3><strong>Title</strong></h3>
-  <%= f.input :title, label: false %>
+  <%= f.input :title, label: false, tooltip: "Edit this" %>
 
   <h3><strong>Will the Minister of</strong></h3>
   <%= f.input :ministry, label: false, collection: Question::MINISTRIES %> 
 
   <h3><strong> be pleased to state:</strong></h3>
-  <%= f.input :text, label: false, :input_html => {:rows => 5}%>
+  <%= f.input :text, label: false, :input_html => {:rows => 5} %>
+
 </br>
