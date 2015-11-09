@@ -16766,3 +16766,34 @@ Processing by HomeController#index as HTML
   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "questions"[0m
   Rendered home/index.html.erb within layouts/application (0.6ms)
 Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-11-08 18:59:30 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "questions"
+  Rendered home/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 28ms (Views: 17.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/questions/new" for ::1 at 2015-11-08 18:59:32 -0800
+Processing by QuestionsController#new as HTML
+  Rendered questions/_personal_info.erb (18.4ms)
+  Rendered questions/new.html.erb within layouts/application (60.8ms)
+Completed 200 OK in 85ms (Views: 64.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/show" for ::1 at 2015-11-08 18:59:34 -0800
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mQuestion Load (0.5ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/show.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/questions.pdf?id=2" for ::1 at 2015-11-08 18:59:38 -0800
+Processing by QuestionsController#index as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered questions/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 14ms (Views: 4.5ms | ActiveRecord: 0.2ms)
