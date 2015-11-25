@@ -36,7 +36,7 @@ $(document).ready(function() {
   });
   navigateTo(0); // Start at the beginning
 
-	$('.popup-with-form').magnificPopup({
+	$('#form-button').magnificPopup({
 		type: 'inline',
 		preloader: false,
 		focus: '#name',

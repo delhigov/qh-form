@@ -12,16 +12,14 @@
 		<div id="description">One line description here. 
 		</div>
 		<br>
-		<div id="count"><%=Question.count %> people have questions.&nbsp;
+		<div id="count"><%= Question.count %> people have questions.&nbsp;
 		</div>
-		<a role="button" href="/questions/new" class="btn btn-default btn-lg">
-	  	<span id="asktext">Ask a Question</span></a>
+		<a role="button" href="#question-form" id="form-button" class="btn btn-default btn-lg">
+	  	<span id="asktext">Ask a Question</span>
+	  </a>
 	</div>
 
-	<!-- link that opens popup -->
-	<a class="popup-with-form" href="#question-form">Open form</a>
-
-	<!-- form itself -->
+	<!-- popup form -->
 	<%= simple_form_for @question, url: '/questions/create', :html=> { id: 'question-form', class: 'demo-form mfp-hide white-popup-block' } do |f| %>
 
 		<div class="form-section">

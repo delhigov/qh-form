@@ -7,30 +7,19 @@ class QuestionsController < ApplicationController
   	@question = Question.find(params[:id])
   end
 
-def create
-    session[:question_params].deep_merge!(params[:question]) if params[:question]
-    @question = Question.new(session[:question_params])
-    @question.current_step = session[:question_step]
+  def create
+    @question = Question.new(question_params)
     if @question.valid?
-      if params[:back_button]
-        @question.previous_step
-      elsif @question.last_step?
-        @question.save if @question.all_valid?
-        if @question.email? 
-      		QuestionMailer.send_report(@question).deliver
-      	end
-      else
-        @question.next_step
+      @question.save
+      if @question.email? 
+      	QuestionMailer.send_report(@question).deliver
       end
-      session[:question_step] = @question.current_step
-    end
-
-    if @question.new_record?
-      render "new"
-    else
-      session[:question_step] = session[:question_params] = nil
-      flash[:notice] = "Question saved!"
       redirect_to root_path
     end
-end
+  end
+
+  def question_params
+    params.require(:question).permit(:title, :ministry, :text, :name, :email, :district, :state)
+  end
+  
 end
