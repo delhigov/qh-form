@@ -1,3 +1,37 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1#title {
+	font-family: AvenirNext-Bold;
+	font-size: 48px;
+	color: #4A4A4A;
+	letter-spacing: 3px;
+	line-height: 66px;
+}
+
+div#description {
+	font-family: AvenirNext-Medium;
+	font-size: 18px;
+	color: #4A4A4A;
+	line-height: 25px;
+}
+
+div#count {
+	font-family: AvenirNext-Bold;
+	font-size: 18px;
+	color: #4A4A4A;
+	line-height: 25px;
+}
+
+div#ask {
+	background: #4A90E2;
+	border-radius: 10px;
+}
+
+span#asktext {
+	font-family: AvenirNext-Bold;
+	font-size: 18px;
+	color: #FFFFFF;
+	line-height: 25px;
+}
