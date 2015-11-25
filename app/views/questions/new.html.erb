@@ -1,8 +1,0 @@
-<h1></h1>
-
-<%= simple_form_for @question do |f| %>
-    <%= render "#{@question.current_step}", :f => f %>
-   	<%= f.button :submit, 'Back', name: "back_button" unless @question.first_step? %>
-    <%= f.button :submit, 'Next' unless @question.last_step? %>
-    <%= f.button :submit, 'Submit' if @question.last_step? %> 
-<% end %>

@@ -7,7 +7,9 @@ Rails.application.routes.draw do
   get 'home/index'
   root 'home#index'
 
-  resources :questions
+  post 'questions/create'
+
+  # resources :questions
 
 
   # post ':controller(/:action(/:id))'

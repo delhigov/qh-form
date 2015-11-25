@@ -7,12 +7,6 @@ class QuestionsController < ApplicationController
   	@question = Question.find(params[:id])
   end
 
-  def new
-    session[:question_params] ||= {}
-    @question = Question.new(session[:question_params])
-    @question.current_step = session[:question_step]
-  end
-
 def create
     session[:question_params].deep_merge!(params[:question]) if params[:question]
     @question = Question.new(session[:question_params])

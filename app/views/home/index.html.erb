@@ -17,4 +17,46 @@
 		<a role="button" href="/questions/new" class="btn btn-default btn-lg">
 	  	<span id="asktext">Ask a Question</span></a>
 	</div>
+
+	<!-- link that opens popup -->
+	<a class="popup-with-form" href="#question-form">Open form</a>
+
+	<!-- form itself -->
+	<%= simple_form_for @question, url: '/questions/create', :html=> { id: 'question-form', class: 'demo-form mfp-hide white-popup-block' } do |f| %>
+
+		<div class="form-section">
+		  <h3><strong>Title</strong></h3>
+		  <%= f.input :title, label: false, tooltip: "Edit this", class: 'form-control', required: '' %>
+
+		  <h3><strong>Will the Minister of</strong></h3>
+		  <%= f.input :ministry, label: false, collection: Question::MINISTRIES, class: 'form-control', required: '' %> 
+
+		  <h3><strong> be pleased to state:</strong></h3>
+		  <%= f.input :text, label: false, :input_html => {:rows => 5}, class: 'form-control', required: '' %>
+
+		  <div id="add">
+		    <p> Add Question </p>
+		  </div>
+	  </div>
+
+	  <div class="form-section">
+		  <h3><strong>Personal Information</strong></h3>
+		  <%= f.input :name, label: 'Name', class: 'form-control' %>
+		  <%= f.input :email, label: 'Email Address', placeholder: 'user@domain.com', class: 'form-control' %>
+		  <%= f.input :district, label: 'District', class: 'form-control' %>
+		  <%= f.input :state, label: 'State', collection: Question::STATES, class: 'form-control' %>
+		</div>
+
+		<div class="form-section">
+			<h1>Done!</h1>
+		</div>
+
+	  <div class="form-navigation">
+	    <button type="button" class="previous btn btn-info pull-left">&lt; Previous</button>
+	    <button type="button" class="next btn btn-info pull-right">Next &gt;</button>
+	    <%= f.button :submit, 'Submit', class: 'btn btn-default pull-right' %>
+	    <span class="clearfix"></span>
+	  </div>
+	<% end %>
+
 </body>
