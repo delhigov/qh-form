@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-image: url('indianflag.jpg');
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;  
+}
