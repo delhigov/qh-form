@@ -12,7 +12,7 @@
 		<div id="description">One line description here. 
 		</div>
 		<br>
-		<div id="count"><%= Question.count %> people have questions.&nbsp;
+		<div id="count"><%= Question.count %> people have questions.
 		</div>
 		<a role="button" href="#question-form" id="form-button" class="btn btn-default btn-lg">
 	  	<span id="asktext">Ask a Question</span>
@@ -47,7 +47,7 @@
 		  	input_html: {
 		  								"data-toggle" => "popover",
 		  								"data-placement" => "right",
-		  								"data-content" => "<img src='/assets/minister-popover.jpg'>"
+		  								"data-content" => "<img class='popover-image' src='/assets/minister-popover.jpg'>"
 		  							},
 		  	class: 'form-control',
 		  	required: ''
@@ -61,7 +61,7 @@
 		  								rows: 8,
 											"data-toggle" => "popover",
 											"data-placement" => "right",
-											"data-content" => "<img src='/assets/question-popover.jpg'>"
+											"data-content" => "<img class='popover-image' src='/assets/question-popover.jpg'>"
 										},
 		  	class: 'form-control',
 		  	required: ''
@@ -83,7 +83,17 @@
 		</div>
 
 		<div class="form-section">
-			<h1>Show details here</h1>
+			<h2 class="form-header">Confirm your submission</h2>
+			<div class="form-subtext">
+				This is how your question submission will appear.
+			</div>
+
+			<div class="confirmation-text">
+				<div class="confirmation-title-wrapper"><p><strong><span class="confirmation" id="confirmation-title"></span></strong></p></div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;Will the Minister of <span class="confirmation" id="confirmation-ministry"></span></p>
+				<p>be pleased to state:</p>
+				<p><span class="confirmation" id="confirmation-question"></span></p>
+			</div>
 		</div>
 
 	  <div class="form-navigation">

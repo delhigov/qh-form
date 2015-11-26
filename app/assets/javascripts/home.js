@@ -1,8 +1,9 @@
-$(document).ready(function() {
+$(document).on('ready page:load', function () {
 
   //
   // POPOVER ENABLE
   //
+
   $('[data-toggle="popover"]').popover({
     html: true,
     trigger: 'hover'
@@ -25,6 +26,11 @@ $(document).ready(function() {
     var atTheEnd = index >= $sections.length - 1;
     $('.form-navigation .next').toggle(!atTheEnd);
     $('.form-navigation [type=submit]').toggle(atTheEnd);
+    if (atTheEnd) {
+      $('#confirmation-title').text($('#question_title').val())
+      $('#confirmation-ministry').text($('#question_ministry').val().toUpperCase())
+      $('#confirmation-question').text($('#question_text').val())
+    }
   }
 
   function curIndex() {
@@ -32,7 +38,7 @@ $(document).ready(function() {
     return $sections.index($sections.filter('.current'));
   }
 
-  // Previous button is easy, just go back
+  // Previous button
   $('.form-navigation .previous').click(function() {
     navigateTo(curIndex() - 1);
   });
@@ -70,4 +76,5 @@ $(document).ready(function() {
 			}
 		}
 	});
+  
 });
