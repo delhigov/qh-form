@@ -6,7 +6,7 @@
 #  title            :string
 #  ministry         :string
 #  text             :text
-#  status           :integer
+#  status           :text
 #  notes            :text
 #  response         :text
 #  session_date     :date
@@ -119,13 +119,11 @@ class Question < ActiveRecord::Base
 		"Youth Affairs and Sports"
 	].freeze
 
-	STATUSES = {
-		deferred: 'DEFERRED',
-		answered: 'ANSWERED',
-		scheduled: 'SCHEDULED',
-		rejected: 'REJECTED',
-		waiting: 'WAITING'
-	}.freeze
+	STATUSES = [
+		"Answered",
+		"Schedule",
+		"Rejected"
+	].freeze
 
 	STATES = [
 		"Andhra Pradesh", 

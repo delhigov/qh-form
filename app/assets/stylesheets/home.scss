@@ -14,7 +14,7 @@ h1#title {
     transform: translateX(-50%) translateY(-35%);
 }
 
-div#description {
+div#count {
 	font-family: AvenirNext-Medium;
 	font-size: 18px;
 	color: #4A4A4A;
@@ -25,20 +25,9 @@ div#description {
     transform: translateX(-50%) translateY(-30%);
 }
 
-div#count {
-	font-family: AvenirNext-Bold;
-	font-size: 18px;
-	color: #4A4A4A;
-	line-height: 25px;
-	position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
-
 button#ask {
-	border-color: #FFFFFF;
-	background: #ADD8E6;
+	border: 2px solid #FFFFFF;
+	background: rgba(0,0,0,0);
 	border-radius: 6px;
 	font-family: AvenirNext-Medium;
 	letter-spacing: 2px;
@@ -48,7 +37,7 @@ button#ask {
 	height: 8%;
 	width: 20%;
 	position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
