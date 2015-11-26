@@ -23,7 +23,7 @@
 
 class Question < ActiveRecord::Base
 	before_create :create_tracking_id, :preprocess_question
-  validates_presence_of :title, :ministry, :text
+  	validates_presence_of :title, :ministry, :text
 
 	def create_tracking_id
 		begin
@@ -92,11 +92,13 @@ class Question < ActiveRecord::Base
 		"Youth Affairs and Sports"
 	].freeze
 
-	STATUSES = [
-		"Answered",
-		"Schedule",
-		"Rejected"
-	].freeze
+	STATUSES = {
+		deferred: 'DEFERRED',
+		answered: 'ANSWERED',
+		scheduled: 'SCHEDULED',
+		rejected: 'REJECTED',
+		waiting: 'WAITING'
+	}.freeze
 
 	STATES = [
 		"Andhra Pradesh", 
