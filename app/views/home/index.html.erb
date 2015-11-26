@@ -23,22 +23,58 @@
 	<%= simple_form_for @question, url: '/questions/create', :html=> { id: 'question-form', class: 'demo-form mfp-hide white-popup-block' } do |f| %>
 
 		<div class="form-section">
-		  <h3><strong>Title</strong></h3>
-		  <%= f.input :title, label: false, tooltip: "Edit this", class: 'form-control', required: '' %>
+			<h2 class="form-header">Ask a question</h2>
+			<div class="form-subtext">Submit a question to be asked by your Member of Parliament.</div>
 
-		  <h3><strong>Will the Minister of</strong></h3>
-		  <%= f.input :ministry, label: false, collection: Question::MINISTRIES, class: 'form-control', required: '' %> 
+		  <h5 class="form-subheader">Title</h5>
+		  <%= f.input :title,
+		  	label: false,
+		  	placeholder: 'What is your question about?',
+		  	input_html: {
+		  								"data-toggle" => "popover",
+		  								"data-placement" => "right",
+		  								"data-content" => "<img class='popover-image' src='/assets/title-popover.jpg'>"
+		  							},
+		  	class: 'form-control',
+		  	required: ''
+		  %>
 
-		  <h3><strong> be pleased to state:</strong></h3>
-		  <%= f.input :text, label: false, :input_html => {:rows => 5}, class: 'form-control', required: '' %>
+		  <h5 class="form-subheader">Will the Minister of</h5>
+		  <%= f.input :ministry,
+		  	prompt: 'Which minister are you addressing?',
+		  	label: false,
+		  	collection: Question::MINISTRIES,
+		  	input_html: {
+		  								"data-toggle" => "popover",
+		  								"data-placement" => "right",
+		  								"data-content" => "<img src='/assets/minister-popover.jpg'>"
+		  							},
+		  	class: 'form-control',
+		  	required: ''
+		  %> 
 
-		  <div id="add">
-		    <p> Add Question </p>
-		  </div>
+		  <h5 class="form-subheader"> be pleased to state:</h5>
+		  <%= f.input :text,
+		  	label: false,
+		  	placeholder: 'What are your questions?',
+		  	input_html: {
+		  								rows: 8,
+											"data-toggle" => "popover",
+											"data-placement" => "right",
+											"data-content" => "<img src='/assets/question-popover.jpg'>"
+										},
+		  	class: 'form-control',
+		  	required: ''
+		  %>
+
 	  </div>
 
 	  <div class="form-section">
-		  <h3><strong>Personal Information</strong></h3>
+		  <h2 class="form-header">Personal Info</h2>
+		  <div class="form-subtext">
+		  	Provide a valid email address to directly receive updates on your question.<br>The other fields are <strong>optional</strong> and for data collection purposes only.
+		  </div>
+
 		  <%= f.input :name, label: 'Name', class: 'form-control' %>
 		  <%= f.input :email, label: 'Email Address', placeholder: 'user@domain.com', class: 'form-control' %>
 		  <%= f.input :district, label: 'District', class: 'form-control' %>
@@ -46,13 +82,13 @@
 		</div>
 
 		<div class="form-section">
-			<h1>Done!</h1>
+			<h1>Show details here</h1>
 		</div>
 
 	  <div class="form-navigation">
 	    <button type="button" class="previous btn btn-info pull-left">&lt; Previous</button>
 	    <button type="button" class="next btn btn-info pull-right">Next &gt;</button>
-	    <%= f.button :submit, 'Submit', class: 'btn btn-default pull-right' %>
+	    <%= f.button :submit, 'Submit Question', class: 'btn btn-default pull-right' %>
 	    <span class="clearfix"></span>
 	  </div>
 	<% end %>

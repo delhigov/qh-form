@@ -36,6 +36,23 @@ span#asktext {
 	line-height: 25px;
 }
 
+.form-header {
+	text-align: center;
+	margin-bottom: 0px;
+	border-bottom: none;
+	padding-bottom: 3px;
+}
+
+.form-subtext {
+	text-align: center;
+	margin-bottom: 25px;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+.popover-image {
+	max-width: 250px;
+}
+
 // PARSLEY CSS
 
 body {

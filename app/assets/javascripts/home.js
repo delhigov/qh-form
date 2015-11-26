@@ -1,4 +1,17 @@
 $(document).ready(function() {
+
+  //
+  // POPOVER ENABLE
+  //
+  $('[data-toggle="popover"]').popover({
+    html: true,
+    trigger: 'hover'
+  })
+
+  //
+  // PARSLEY MULTISTEP FORM VALIDATION
+  //
+
   var $sections = $('.form-section');
 
   function navigateTo(index) {
@@ -35,6 +48,10 @@ $(document).ready(function() {
     $(section).find(':input').attr('data-parsley-group', 'block-' + index);
   });
   navigateTo(0); // Start at the beginning
+
+  //
+  // MAGNIFIC POPUP
+  //
 
 	$('#form-button').magnificPopup({
 		type: 'inline',
