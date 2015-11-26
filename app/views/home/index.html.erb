@@ -1,13 +1,10 @@
 <body>
 	<div class="text-center">
 		<h1 id="title">Lok Sabha Question Hour</h1>
-		<div id="description">One line description here. 
-		</div>
 		<br>
-		<div id="count"><%= Question.count %> people have questions.
+		<div id="count"><strong><%= Question.count %></strong> people have asked questions.&nbsp;
 		</div>
-		<a role="button" href="#question-form" id="form-button" class="btn btn-default btn-lg">
-	  	<span id="asktext">Ask a Question</span>
+		<a role="button" href="#question-form" id="form-button" class="ask-button"><span class="ask-text">Ask a Question</span></a>
 	  </a>
 	</div>
 
@@ -15,6 +12,7 @@
 	<%= simple_form_for @question, url: '/questions/create', :html=> { id: 'question-form', class: 'demo-form mfp-hide white-popup-block' } do |f| %>
 
 		<div class="form-section">
+			<img class = "icon" src="/assets/questionicon.jpg">
 			<h2 class="form-header">Ask a question</h2>
 			<div class="form-subtext">Submit a question to be asked by your Member of Parliament.</div>
 
@@ -62,6 +60,7 @@
 	  </div>
 
 	  <div class="form-section">
+		  <img class = "icon" src="/assets/usericon.png">
 		  <h2 class="form-header">Personal Info</h2>
 		  <div class="form-subtext">
 		  	Provide a valid email address to directly receive updates on your question.<br>The other fields are <strong>optional</strong> and for data collection purposes only.
@@ -75,7 +74,7 @@
 		</div>
 
 		<div class="form-section">
-			<h2 class="form-header">Confirm your submission</h2>
+			<h2 class="form-header">Does this look correct?</h2>
 			<div class="form-subtext">
 				This is how your question submission will appear.
 			</div>

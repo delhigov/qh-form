@@ -25,14 +25,15 @@ div#count {
     transform: translateX(-50%) translateY(-30%);
 }
 
-button#ask {
-	border: 2px solid #FFFFFF;
+.ask-button {
+	border: 2px solid #808080;
 	background: rgba(0,0,0,0);
+	padding: 12px;
 	border-radius: 6px;
 	font-family: AvenirNext-Medium;
 	letter-spacing: 2px;
 	font-size: 20px;
-	color: #FFFFFF;
+	color: #808080;
 	line-height: 25px;
 	height: 8%;
 	width: 20%;
@@ -44,6 +45,7 @@ button#ask {
 
 .form-header {
 	text-align: center;
+	margin-top: 7px;
 	margin-bottom: 0px;
 	border-bottom: none;
 	padding-bottom: 3px;
@@ -57,6 +59,22 @@ button#ask {
 
 .popover-image {
 	max-width: 250px;
+}
+
+.parsley-required {
+	color: red;
+}
+
+.parsley-type {
+	color: red;
+}
+
+.icon {
+	width: 45px;
+	height: 45px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .confirmation-text {
@@ -95,7 +113,6 @@ body {
 }
 .form-section {
   padding-left: 15px;
-  border-left: 2px solid #FF851B;
   display: none;
 }
 .form-section.current {
