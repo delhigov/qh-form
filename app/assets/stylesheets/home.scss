@@ -74,7 +74,21 @@ div#count {
 	height: 45px;
 	display: block;
 	margin-left: auto;
-	margin-right: auto
+	margin-right: auto;
+}
+
+.confirmation-text {
+	text-align: left;
+	font-family: "Times New Roman";
+}
+
+.confirmation-text p {
+	margin: 5px;
+}
+
+.confirmation-title-wrapper {
+	/*text-align: center;*/
+	padding-left: 10px;
 }
 
 // PARSLEY CSS
