@@ -14,11 +14,47 @@
  *= require_self
  */
 
- body {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    background-image: url('indianflag.jpg');
-    background-size: 100% 100%;  
+body {
+    background-image: url('parliament.png');
+    background-size: cover;
     background-repeat: no-repeat;  
+}
+
+button#home {
+	border: none;
+	background-color: #FFFFFF;
+	font-family: AvenirNext-Bold;
+	font-size: 25px;
+	color: #9B9B9B;
+	letter-spacing: 2.2px;
+	line-height: 41px;
+	position: absolute;
+	left: 2%;
+	top: 1%;
+}
+
+button#about {
+	border: none;
+	background-color: #FFFFFF;
+	font-family: AvenirNext-Bold;
+	font-size: 25px;
+	color: #9B9B9B;
+	letter-spacing: 2.2px;
+	line-height: 41px;
+	position: absolute;
+	left: 15%;
+	top: 1%;
+}
+
+button#answers {
+	border: none;
+	background-color: #FFFFFF;
+	font-family: AvenirNext-Bold;
+	font-size: 25px;
+	color: #9B9B9B;
+	letter-spacing: 2.2px;
+	line-height: 41px;
+	position: absolute;
+	left: 28%;
+	top: 1%;
 }
