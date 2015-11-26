@@ -75,8 +75,9 @@
 		  	Provide a valid email address to directly receive updates on your question.<br>The other fields are <strong>optional</strong> and for data collection purposes only.
 		  </div>
 
+		  <%= f.input :email, label: 'Email ID', placeholder: 'user@domain.com', class: 'form-control' %>
 		  <%= f.input :name, label: 'Name', class: 'form-control' %>
-		  <%= f.input :email, label: 'Email Address', placeholder: 'user@domain.com', class: 'form-control' %>
+		  <%= f.input :city, label: 'City', class: 'form-control' %>
 		  <%= f.input :district, label: 'District', class: 'form-control' %>
 		  <%= f.input :state, label: 'State', collection: Question::STATES, class: 'form-control' %>
 		</div>
