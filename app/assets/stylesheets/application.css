@@ -15,17 +15,17 @@
  */
 
 body {
-    background-image: url('parliament.png');
+    background-image: url('dehlicapital.jpg');
     background-size: cover;
     background-repeat: no-repeat;  
 }
 
 button#home {
 	border: none;
-	background-color: #FFFFFF;
+	background-color:rgba(0, 0, 0, 0);
 	font-family: AvenirNext-Bold;
-	font-size: 25px;
-	color: #9B9B9B;
+	font-size: 20px;
+	color: #FFFFFF;
 	letter-spacing: 2.2px;
 	line-height: 41px;
 	position: absolute;
@@ -35,10 +35,10 @@ button#home {
 
 button#about {
 	border: none;
-	background-color: #FFFFFF;
+	background-color:rgba(0, 0, 0, 0);
 	font-family: AvenirNext-Bold;
-	font-size: 25px;
-	color: #9B9B9B;
+	font-size: 20px;
+	color: #FFFFFF;
 	letter-spacing: 2.2px;
 	line-height: 41px;
 	position: absolute;
@@ -48,10 +48,10 @@ button#about {
 
 button#answers {
 	border: none;
-	background-color: #FFFFFF;
+	background-color:rgba(0, 0, 0, 0);
 	font-family: AvenirNext-Bold;
-	font-size: 25px;
-	color: #9B9B9B;
+	font-size: 20px;
+	color: #FFFFFF;
 	letter-spacing: 2.2px;
 	line-height: 41px;
 	position: absolute;
