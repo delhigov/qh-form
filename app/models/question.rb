@@ -37,6 +37,10 @@ class Question < ActiveRecord::Base
 		end
 	end
 
+	def status_enum
+   		[['Deferred'],['Answered'],['Scheduled']]
+	end
+
 	MINISTRIES = [
 		"Agriculture", 
 		"Chemicals and Fertilizers", 

@@ -4,7 +4,7 @@ class CreateQuestions < ActiveRecord::Migration
       t.string :title
       t.string :ministry
       t.text :text
-      t.integer :status
+      t.text :status
       t.text :notes
       t.text :response
       t.date :session_date
