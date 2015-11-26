@@ -14,11 +14,47 @@
  *= require_self
  */
 
- body {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    background-image: url('indianflag.jpg');
-    background-size: 100% 100%;  
+body {
+    background-image: url('dehlicapital.jpg');
+    background-size: cover;
     background-repeat: no-repeat;  
+}
+
+button#home {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	font-family: AvenirNext-Bold;
+	font-size: 20px;
+	color: #FFFFFF;
+	letter-spacing: 1.5px;
+	line-height: 41px;
+	position: absolute;
+	left: 2%;
+	top: 1%;
+}
+
+button#about {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	font-family: AvenirNext-Bold;
+	font-size: 20px;
+	color: #FFFFFF;
+	letter-spacing: 1.5px;
+	line-height: 41px;
+	position: absolute;
+	left: 15%;
+	top: 1%;
+}
+
+button#answers {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	font-family: AvenirNext-Bold;
+	font-size: 20px;
+	color: #FFFFFF;
+	letter-spacing: 1.5px;
+	line-height: 41px;
+	position: absolute;
+	left: 28%;
+	top: 1%;
 }

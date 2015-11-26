@@ -4,36 +4,42 @@
 
 h1#title {
 	font-family: AvenirNext-Bold;
-	font-size: 48px;
+	font-size: 43px;
 	color: #4A4A4A;
-	letter-spacing: 3px;
-	line-height: 66px;
+	letter-spacing: 4px;
+	line-height: 96px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-35%);
 }
 
-div#description {
+div#count {
 	font-family: AvenirNext-Medium;
 	font-size: 18px;
 	color: #4A4A4A;
 	line-height: 25px;
+	position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-30%);
 }
 
-div#count {
-	font-family: AvenirNext-Bold;
-	font-size: 18px;
-	color: #4A4A4A;
-	line-height: 25px;
-}
-
-div#ask {
-	background: #4A90E2;
-	border-radius: 10px;
-}
-
-span#asktext {
-	font-family: AvenirNext-Bold;
-	font-size: 18px;
+button#ask {
+	border: 2px solid #FFFFFF;
+	background: rgba(0,0,0,0);
+	border-radius: 6px;
+	font-family: AvenirNext-Medium;
+	letter-spacing: 2px;
+	font-size: 20px;
 	color: #FFFFFF;
 	line-height: 25px;
+	height: 8%;
+	width: 20%;
+	position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .form-header {

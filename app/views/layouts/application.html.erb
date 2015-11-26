@@ -14,36 +14,13 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-  <div id="background"></div>
-  <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="navbar-inner">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href=<%= root_path %>>Home</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li><%#= link_to "Home", root_path %></li>
-          <li><%#= link_to "Examples", examples_path %></li>
-          <li><%#= link_to "Documentation", documentation_path %></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-
-  <div class="container master-container">
-    <ul class="breadcrumb">
-      <%= yield :breadcrumb %>
-    </ul>
-
-    <% if notice %>
-      <div class="alert alert-success fade in" data-alert="alert">
-        <a class="close" data-dismiss='alert' href="#">×</a>
-        <p><%= notice %></p>
-      </div>
-    <% end %>
-
-    <%= yield %>
+  <div id="background">
+  <button id="home">Home</button>
+  <button id="about">About</button>
+  <button id="answers">Read Answers</button>
+      <%= yield %>
     
   </div>
 
