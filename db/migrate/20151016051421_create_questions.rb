@@ -13,7 +13,6 @@ class CreateQuestions < ActiveRecord::Migration
       t.string :city
       t.string :district
       t.string :state
-      t.string :email
       t.string :name
       t.string :tracking_id
       t.timestamps null: false
