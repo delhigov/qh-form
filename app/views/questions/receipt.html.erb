@@ -1,2 +1,12 @@
-<h1>Questions#receipt</h1>
-<p>Find me in app/views/questions/receipt.html.erb</p>
+<h1>Thank you! Your question has been submitted.</h1>
+<p>
+	The tracking number for your question is <strong><%= params[:q] %></strong>. Use it to track the status of your question.
+</p>
+<p>
+	<% if Question.find_by(tracking_id: params[:q]).email.present? %>
+		An email has been sent to you with your tracking number as well.
+	<% else %>
+		Because you did not provide an email ID, please write down your tracking number for future reference.
+	<% end %>
+</p>
+
