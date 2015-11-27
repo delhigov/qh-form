@@ -9,6 +9,10 @@ $(document).on('ready page:load', function () {
     trigger: 'hover'
   })
 
+  $('[data-toggle="popover-click"]').popover({
+    html: true
+  })
+
   //
   // PARSLEY MULTISTEP FORM VALIDATION
   //

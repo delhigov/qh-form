@@ -77,7 +77,7 @@
 			<h2 class="form-header">Does this look correct?</h2>
 			<div class="form-subtext">
 				This is how your question submission will appear.
-				<a id="confirmation-example" data-toggle="popover" data-placement="right" data-content="<img class='popover-image' src='/assets/example-popover.jpg'>">SAMPLE</a>
+				<a id="confirmation-example" data-toggle="popover-click" data-placement="right" data-content="<img class='popover-image' src='/assets/example-popover.jpg'>">[Show sample]</a>
 			</div>
 
 			<div class="confirmation-text">
@@ -89,9 +89,9 @@
 		</div>
 
 	  <div class="form-navigation">
-	    <button type="button" class="previous btn btn-info pull-left">&lt; Previous</button>
-	    <button type="button" class="next btn btn-info pull-right">Next &gt;</button>
-	    <%= f.button :submit, 'Submit Question', class: 'btn btn-default pull-right' %>
+	    <button type="button" class="previous btn btn-default pull-left">&lt; Previous</button>
+	    <button type="button" class="next btn btn-success pull-right">Next &gt;</button>
+	    <button type="submit" class="submit btn btn-success pull-right">Submit Question</button>
 	    <span class="clearfix"></span>
 	  </div>
 	<% end %>
