@@ -6,7 +6,7 @@
 #  title            :string
 #  ministry         :string
 #  text             :text
-#  status           :text
+#  status           :string
 #  notes            :text
 #  response         :text
 #  session_date     :date

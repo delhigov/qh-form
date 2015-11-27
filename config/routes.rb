@@ -1,13 +1,17 @@
 Rails.application.routes.draw do
   
+  get 'questions/receipt'
+
   get 'home/about'
 
   get 'questions/create'
   post 'questions/create'
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  # get 'questions/new'
 
-  # post ':controller(/:action)'
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+
+  post ':controller(/:action)'
+
+  get 'questions/show'
 
   get 'home/index'
   root 'home#index'

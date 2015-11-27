@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20151016051421) do
     t.string   "title"
     t.string   "ministry"
     t.text     "text"
-    t.integer  "status"
+    t.string   "status"
     t.text     "notes"
     t.text     "response"
     t.date     "session_date"

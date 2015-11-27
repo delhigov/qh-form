@@ -26,7 +26,7 @@ $(document).on('ready page:load', function () {
     var atTheEnd = index >= $sections.length - 1;
     $('.form-navigation .next').toggle(!atTheEnd);
     $('.form-navigation [type=submit]').toggle(atTheEnd);
-    if (atTheEnd) {
+    if (atTheEnd && $sections.length > 0) {
       $('#confirmation-title').text($('#question_title').val())
       $('#confirmation-ministry').text($('#question_ministry').val().toUpperCase())
       $('#confirmation-question').text($('#question_text').val())

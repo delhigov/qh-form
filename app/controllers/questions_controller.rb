@@ -14,12 +14,12 @@ class QuestionsController < ApplicationController
       if @question.email? 
       	QuestionMailer.send_report(@question).deliver
       end
-      redirect_to root_path
+      redirect_to controller: 'questions', action: 'receipt', q: @question.tracking_id
     end
   end
 
   def question_params
-    params.require(:question).permit(:title, :ministry, :text, :name, :email, :district, :state)
+    params.require(:question).permit(:title, :ministry, :text, :city, :name, :email, :district, :state)
   end
   
 end

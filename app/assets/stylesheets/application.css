@@ -17,7 +17,8 @@
 body {
     background-image: url('parliament2.jpg');
     background-size: cover;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
+    padding-top: 50px;
 }
 
 button#home {
