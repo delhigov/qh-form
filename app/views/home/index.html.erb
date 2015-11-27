@@ -63,7 +63,7 @@
 		  <img class = "icon" src="/assets/usericon.png">
 		  <h2 class="form-header">Personal Info</h2>
 		  <div class="form-subtext">
-		  	Provide a valid email address to directly receive updates on your question.<br>The other fields are <strong>optional</strong> and for data collection purposes only.
+		  	Provide a valid email address to directly receive updates on your question.<br>These fields are <strong>optional</strong> and for data collection purposes only.
 		  </div>
 
 		  <%= f.input :email, label: 'Email ID', placeholder: 'user@domain.com', class: 'form-control' %>
@@ -77,13 +77,14 @@
 			<h2 class="form-header">Does this look correct?</h2>
 			<div class="form-subtext">
 				This is how your question submission will appear.
+				<a id="confirmation-example" data-toggle="popover" data-placement="right" data-content="<img class='popover-image' src='/assets/example-popover.jpg'>">SAMPLE</a>
 			</div>
 
 			<div class="confirmation-text">
 				<div class="confirmation-title-wrapper"><p><strong><span class="confirmation" id="confirmation-title"></span></strong></p></div>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;Will the Minister of <span class="confirmation" id="confirmation-ministry"></span></p>
+				<p>&nbsp;&nbsp;Will the Minister of <span class="confirmation" id="confirmation-ministry"></span></p>
 				<p>be pleased to state:</p>
-				<p><span class="confirmation" id="confirmation-question"></span></p>
+				<p>&nbsp;&nbsp;<span class="confirmation" id="confirmation-question"></span></p>
 			</div>
 		</div>
 

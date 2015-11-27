@@ -78,8 +78,11 @@ div#count {
 }
 
 .confirmation-text {
-	text-align: left;
+	text-align: justify;
+	width: 230px;
+	margin: 0 auto;
 	font-family: "Times New Roman";
+	word-wrap: break-word;
 }
 
 .confirmation-text p {
@@ -87,8 +90,11 @@ div#count {
 }
 
 .confirmation-title-wrapper {
-	/*text-align: center;*/
-	padding-left: 10px;
+	text-align: center;
+}
+
+body {
+   text-align:center; /* this is required for old versions of IE */
 }
 
 // PARSLEY CSS
