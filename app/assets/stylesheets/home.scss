@@ -28,16 +28,16 @@ div#count {
 
 .ask-button {
 	background: #4A90E2;
-	padding: 12px;
+	padding: 14px;
 	border-radius: 6px;
 	font-family: AvenirNext-Medium;
 	letter-spacing: 2px;
 	font-size: 20px;
 	color: #FFFFFF;
-	height: 7%;
+	height: 8%;
 	width: 25%;
 	position: absolute;
-    top: 45%;
+    top: 48%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
@@ -47,13 +47,14 @@ div#count {
 	margin-top: 7px;
 	margin-bottom: 0px;
 	border-bottom: none;
-	padding-bottom: 3px;
+	padding-bottom: 12px;
 }
 
 .form-subtext {
 	text-align: center;
 	margin-bottom: 25px;
 	border-bottom: 1px solid #d3d3d3;
+	padding-bottom: 5px;
 }
 
 .popover-image {
