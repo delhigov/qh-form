@@ -21,45 +21,11 @@ body {
     padding-top: 50px;
 }
 
-button#home {
-	border: none;
-	background-color:rgba(0, 0, 0, 0);
-	font-family: AvenirNext-Medium;
-	font-size: 20px;
-	color: #000000;
-	letter-spacing: 1.5px;
-	line-height: 41px;
-	position: absolute;
-	left: 2%;
-	top: 2%;
-}
-
-a#about {
-	border: none;
-	background-color:rgba(0, 0, 0, 0);
-	font-family: AvenirNext-Medium;
-	font-size: 20px;
-	color: #000000;
-	letter-spacing: 1.5px;
-	line-height: 41px;
-	position: absolute;
-	left: 15%;
-	top: 2%;
-}
-
-button#answers {
-	border: none;
-	background-color:rgba(0, 0, 0, 0);
-	font-family: AvenirNext-Medium;
-	font-size: 20px;
-	color: #000000;
-	letter-spacing: 1.5px;
-	line-height: 41px;
-	position: absolute;
-	left: 28%;
-	top: 2%;
-}
-
-hr#header-line {
-	float: left;
+.about-icon {
+    background-image: url('abouticon.png');
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+	display: block;
+	margin: 0px;
+	padding-left: 23px;
 }

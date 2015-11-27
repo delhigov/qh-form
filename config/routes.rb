@@ -7,8 +7,6 @@ Rails.application.routes.draw do
   get 'questions/create'
   post 'questions/create'
 
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-
   post ':controller(/:action)'
 
   get 'questions/show'

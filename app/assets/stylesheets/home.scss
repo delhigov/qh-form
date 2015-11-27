@@ -4,14 +4,15 @@
 
 h1#title {
 	font-family: AvenirNext-Bold;
-	font-size: 43px;
+	font-size: 50px;
 	color: #4A4A4A;
 	letter-spacing: 4px;
 	line-height: 96px;
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 50%;
-    transform: translateX(-50%) translateY(-35%);
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 div#count {
@@ -20,25 +21,23 @@ div#count {
 	color: #4A4A4A;
 	line-height: 25px;
 	position: absolute;
-    top: 35%;
+    top: 38%;
     left: 50%;
     transform: translateX(-50%) translateY(-30%);
 }
 
 .ask-button {
-	border: 2px solid #808080;
-	background: rgba(0,0,0,0);
-	padding: 12px;
+	background: #4A90E2;
+	padding: 14px;
 	border-radius: 6px;
 	font-family: AvenirNext-Medium;
 	letter-spacing: 2px;
 	font-size: 20px;
-	color: #808080;
-	line-height: 25px;
+	color: #FFFFFF;
 	height: 8%;
-	width: 20%;
+	width: 25%;
 	position: absolute;
-    top: 45%;
+    top: 48%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
@@ -48,13 +47,13 @@ div#count {
 	margin-top: 7px;
 	margin-bottom: 0px;
 	border-bottom: none;
-	padding-bottom: 3px;
+	padding-bottom: 12px;
 }
 
 .form-subtext {
 	text-align: center;
-	margin-bottom: 25px;
 	border-bottom: 1px solid #d3d3d3;
+	padding-bottom: 5px;
 }
 
 .popover-image {
