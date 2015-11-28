@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
+// HOMEPAGE CSS
+
 h1#title {
 	font-family: AvenirNext-Bold;
 	font-size: 50px;
@@ -19,22 +23,71 @@ div#count {
 	line-height: 25px;
 }
 
-.search-wrapper {
-	float: left;
+.home-content {
+  text-align: center;
+  margin-right: 15%;
+  margin-top: 17%;
 }
 
-input#search-box button#go-button {
+.home-wrapper {
+	position: absolute;
+	padding-top: 50px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: url('parliament-g.jpg');
+	background-position: 0px 0px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.left-pane {
 	display: inline-block;
-
+	padding-right: 30px;
+	border-right: 2px solid #424242;
+	height: 200px;
 }
+
+.right-pane {
+	padding-left: 30px;
+	display: inline-block;
+}
+
+.column img {
+	max-height: 150px;
+	vertical-align: bottom;
+}
+
 #form-button {
 	padding: 12px;
-	border-radius: 10px;
 	font-family: AvenirNext-Medium;
 	font-size: 25px;
-	margin-top: 5px;
+	margin-top: 2px;
+	margin-bottom: 15px;
 }
 
+
+// JUST TO STYLE PLACEHOLDER IN SEARCH FIELD OF HOMEPAGE
+
+::-webkit-input-placeholder {
+	font-size: 13.5px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	font-size: 13.5px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	font-size: 13.5px;
+}
+
+:-ms-input-placeholder {  
+	font-size: 13.5px;
+}
+
+
+// FORM CSS
 
 .form-header {
 	text-align: center;
@@ -91,44 +144,6 @@ input#search-box button#go-button {
 	margin-top: 10px; 
 }
 
-// HOMEPAGE CSS
-
-.home-content {
-  text-align: center;
-  margin-right: 15%;
-  margin-top: 18%;
-}
-
-.home-wrapper {
-	position: absolute;
-	padding-top: 50px;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	background-image: url('parliament-g.jpg');
-	background-position: 0px 0px;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.left-pane {
-	display: inline-block;
-	border-right: 2px solid #424242;
-	height: 200px;
-	padding-right: 30px;
-	vertical-align: middle;
-}
-
-.right-pane {
-	padding-left: 30px;
-	display: inline-block;
-}
-
-.column img {
-	margin-top: 20px;
-	max-height: 150px;
-}
 
 // PARSLEY CSS
 
@@ -170,7 +185,7 @@ h4 {
 .invalid-form-error-message.filled {
   border-left: 2px solid red;
 }
-.btn-info, .btn-default {
+#question-form .btn-info, #question-form .btn-default {
   margin-top: 10px;
 }
 html.codepen body {
