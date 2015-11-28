@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'questions/read'
+
   get 'questions/track'
 
   devise_for :admins

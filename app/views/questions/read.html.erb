@@ -1,0 +1,27 @@
+<body>
+	<div class="table-container">
+		<h2>Parliament Answers</h2>
+		<p>Your questions that have been answered by the Parliament:</p>          
+		<table class="table table-striped">
+		<thead>
+		  <tr>
+		    <th>Question No.</th>
+		    <th>Date</th>
+		    <th>Subject</th>
+		  </tr>
+		</thead>
+		<br>
+		<tbody>
+		  	<% @questions.each do |question| %>
+		  		<tr> 
+		  			<td><%= question.id %> </td>
+		  			<td><%= question.updated_at %></td>
+		    		<td><%= question.title %></td> 
+			<% end %>
+		</tbody>
+		</table>
+	</div>
+</body>
+<div id="spacing"></div>
+<img class ="aap-track" src="/assets/indianparliament.jpg">
+<p><%= link_to "Return to site", root_path %></p>
