@@ -8,11 +8,8 @@ h1#title {
 	color: #4A4A4A;
 	letter-spacing: 4px;
 	line-height: 96px;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+	padding-top: 50px;
+	margin-bottom: 0px;
 }
 
 div#count {
@@ -20,27 +17,19 @@ div#count {
 	font-size: 18px;
 	color: #4A4A4A;
 	line-height: 25px;
-	position: absolute;
-    top: 38%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-30%);
 }
 
-.ask-button {
-	background: #4A90E2;
+
+#form-button {
+	margin-top: 15px; 
 	padding: 14px;
 	border-radius: 6px;
 	font-family: AvenirNext-Medium;
-	letter-spacing: 2px;
-	font-size: 20px;
-	color: #FFFFFF;
+	font-size: 30px;
 	height: 8%;
 	width: 25%;
-	position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
 }
+
 
 .form-header {
 	text-align: center;
