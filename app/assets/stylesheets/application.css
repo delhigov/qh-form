@@ -15,7 +15,8 @@
  */
 
 body {
-    background-image: url('parliament2.jpg');
+    background-image: url('parliament-g.jpg');
+    background-position: 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 50px;
@@ -28,4 +29,9 @@ body {
 	display: block;
 	margin: 0px;
 	padding-left: 23px;
+}
+
+p.alert {
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
