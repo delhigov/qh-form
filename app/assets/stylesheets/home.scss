@@ -41,6 +41,7 @@ div#count {
 	text-align: center;
 	border-bottom: 1px solid #d3d3d3;
 	padding-bottom: 5px;
+	margin-bottom: 15px;
 }
 
 .popover-image {
@@ -79,21 +80,29 @@ div#count {
 	text-align: center;
 }
 
-body {
-   text-align:center; /* this is required for old versions of IE */
-}
-
 .form-navigation .btn-success {
 	margin-top: 10px; 
 }
 
 // HOMEPAGE CSS
 
-.home-container {
-  margin: auto;
+.home-content {
   text-align: center;
   margin-right: 15%;
-  margin-top: 12%;
+  margin-top: 18%;
+}
+
+.home-wrapper {
+	position: absolute;
+	padding-top: 50px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: url('parliament-g.jpg');
+	background-position: 0px 0px;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .left-pane {
