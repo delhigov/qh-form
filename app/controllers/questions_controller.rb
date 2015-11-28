@@ -25,5 +25,9 @@ class QuestionsController < ApplicationController
   def track 
     @question = Question.find_by(tracking_id: params[:q])
   end 
+
+  def read 
+    @questions = Question.where(status: "Answered")
+  end 
   
 end

@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   
+  get 'questions/read'
+
   get 'questions/track'
+
+  get 'questions/index'
 
   devise_for :admins
   mount RailsAdmin::Engine => '/admins', as: 'rails_admin'

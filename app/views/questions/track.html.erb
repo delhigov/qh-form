@@ -1,5 +1,16 @@
 <% if @question.present? %>
-	The status of your question is <strong><%= @question.status %></strong>
+	<p>The status of your question is <strong><%= @question.status %></strong></p>
+	<br>
+	<div id="track-text"> 
+		<strong>LOK SABHA</strong>
+		<hr width="20%">
+		<p><strong><%= @question.title %></strong></p>
+		<p>Will the Minister of <%= @question.ministry %> <br>be pleased to state: </p>
+		<p><%= @question.text %></p>
+	</div>
 <% else %>
-	There is no question associated with the tracking ID that you entered. 
+	There is no question associated with the tracking ID that you entered. Please try again. 
 <% end %>
+<div id="spacing"></div>
+<img class ="aap-track" src="/assets/indianparliament.jpg">
+<p><%= link_to "Return to home", root_path %></p>
