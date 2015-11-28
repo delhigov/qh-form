@@ -14,9 +14,9 @@
 		<tbody>
 		  	<% @questions.each do |question| %>
 		  		<tr> 
-		  			<td><%= question.id %> </td>
+		  			<td><%= question.id %></td>
 		  			<td><%= question.updated_at %></td>
-		    		<td><%= question.title %></td> 
+		  			<td><%= link_to question.title, controller: "questions", action: "index", id: question.id %></td>
 			<% end %>
 		</tbody>
 		</table>
@@ -24,4 +24,4 @@
 </body>
 <div id="spacing"></div>
 <img class ="aap-track" src="/assets/indianparliament.jpg">
-<p><%= link_to "Return to site", root_path %></p>
+<p><%= link_to "Return to home", root_path %></p>

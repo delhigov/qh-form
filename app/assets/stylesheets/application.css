@@ -45,3 +45,13 @@ p.alert {
 header .container {
     width: 80%;
 }
+
+h2#admin-login {
+    width: 80%;
+    margin: 0 auto;
+}
+
+div#admin-new-container {
+    width: 50%;
+    margin: 0 auto;
+}
