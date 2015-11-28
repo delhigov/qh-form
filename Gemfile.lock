@@ -145,7 +145,6 @@ GEM
     remotipart (1.2.1)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
-    rolify (5.0.0)
     safe_yaml (1.0.4)
     sass (3.4.19)
     sass-rails (5.0.4)
@@ -202,7 +201,6 @@ DEPENDENCIES
   pdfkit
   rails (= 4.2.4)
   rails_admin
-  rolify
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   simple_form

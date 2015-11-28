@@ -40,7 +40,6 @@ gem 'wicked_pdf'
 gem 'devise'
 gem 'rails_admin'
 gem 'cancancan', '~> 1.10'
-gem 'rolify'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

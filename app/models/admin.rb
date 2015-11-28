@@ -5,10 +5,10 @@ class Admin < ActiveRecord::Base
   devise :database_authenticatable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  def create_temp_password
-	password_length = 8
-	self.password = Devise.friendly_token.first(password_length)
-  end
+ #  def create_temp_password
+	# password_length = 8
+	# self.password = Devise.friendly_token.first(password_length)
+ #  end
 
   ROLES = %w[admin masteradmin banned]
 

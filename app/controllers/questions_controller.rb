@@ -12,7 +12,7 @@ class QuestionsController < ApplicationController
     if @question.valid?
       @question.save
       if @question.email? 
-      	QuestionMailer.send_report(@question).deliver
+      	QuestionMailer.send_question(@question).deliver_now
       end
       redirect_to controller: 'questions', action: 'receipt', q: @question.tracking_id
     end
