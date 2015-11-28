@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  devise_for :admins
+  mount RailsAdmin::Engine => '/admins', as: 'rails_admin'
   get 'questions/receipt'
 
   get 'home/about'
