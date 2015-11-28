@@ -21,5 +21,9 @@ class QuestionsController < ApplicationController
   def question_params
     params.require(:question).permit(:title, :ministry, :text, :city, :name, :email, :district, :state)
   end
+
+  def track 
+    @question = Question.find_by(tracking_id: params[:q])
+  end 
   
 end

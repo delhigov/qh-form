@@ -10,8 +10,14 @@
 		<button id="form-button" href="#question-form" type="button" class="btn btn-success btn-lg">
 			<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span><span class="ask-text">&nbsp;Ask a question</span>
 		</button>
+		<p id="option-space>">or</p>
+			<%= form_tag('questions/track', :method => "get", class: "navbar-form", id: "search-form") do %>
+			<div class="input-group">
+				<%= text_field_tag 'q', '', placeholder: 'Search question with ID' %>
+				<button class="btn btn-default" type="submit"><i class="icon-search"></i>SEARCH</button>
+		    </div>
+		  <% end %>
 	</div>
-
 </div>
 
 <!-- hidden popup form -->

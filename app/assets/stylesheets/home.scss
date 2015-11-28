@@ -19,7 +19,14 @@ div#count {
 	line-height: 25px;
 }
 
+.search-wrapper {
+	float: left;
+}
 
+input#search-box button#go-button {
+	display: inline-block;
+
+}
 #form-button {
 	padding: 12px;
 	border-radius: 10px;

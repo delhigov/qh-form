@@ -31,6 +31,15 @@ body {
 	padding-left: 23px;
 }
 
+.track-icon {
+    background-image: url('searchicon.png');
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0px;
+    padding-left: 23px;
+}
+
 p.alert {
     -webkit-box-shadow: none;
     box-shadow: none;

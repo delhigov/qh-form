@@ -1,0 +1,5 @@
+<% if @question.present? %>
+	The status of your question is <strong><%= @question.status %></strong>
+<% else %>
+	There is no question associated with the tracking ID that you entered. 
+<% end %>

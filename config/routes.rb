@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'questions/track'
+
   devise_for :admins
   mount RailsAdmin::Engine => '/admins', as: 'rails_admin'
   get 'questions/receipt'
