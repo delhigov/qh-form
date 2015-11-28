@@ -5,8 +5,14 @@ class Ability
     can :access, :rails_admin   # grant access to rails_admin
     can :dashboard              # grant access to the dashboard
     admin ||= Admin.new
-    can :manage, :all if admin.role == "masteradmin"
-    can :manage, Question if admin.role == "admin"
+    if admin.role == "masteradmin"
+        can :manage, :all
+    elsif admin.role == "admin"
+        can :manage, Question
+        can :manage, Admin, :id => admin.id
+    else
+        can :read, :none 
+    end
 
     # Define abilities for the passed in user here. For example:
     #
