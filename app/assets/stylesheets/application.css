@@ -15,10 +15,7 @@
  */
 
 body {
-    background-image: url('parliament-g.jpg');
-    background-position: 0px 0px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    text-align: center; /* this is required for old versions of IE */
     padding-top: 50px;
 }
 
@@ -43,4 +40,8 @@ body {
 p.alert {
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+header .container {
+    width: 80%;
 }

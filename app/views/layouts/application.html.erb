@@ -20,8 +20,17 @@
   <p class="notice" id="devise-notice"><%= notice %></p>
   <p class="alert" id="devise-notice"><%= alert %></p>
   <header class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <a class="navbar-brand" href=<%= root_path %>>Home</a>
-    <a class="navbar-brand" href="/home/about/"><span class="about-icon">About</span></a>
+    <div class="navbar-inner">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href=<%= root_path %>>Lok Sabha Question Form</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="navbar-brand" href=<%= root_path %>>Home</a>
+          <li><a class="navbar-brand" href="/home/about/"><span class="about-icon">About</span></a></li>
+        </ul>
+      </div>
+    </div>
   </header>
 
   <%= yield %>

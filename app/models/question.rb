@@ -27,7 +27,7 @@ class Question < ActiveRecord::Base
 
 	def create_tracking_id
 		begin
-			self.tracking_id = SecureRandom.hex(5)
+			self.tracking_id = SecureRandom.hex(4)
 		end while self.class.exists?(:tracking_id => tracking_id)
 	end
 
