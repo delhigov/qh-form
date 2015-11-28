@@ -1,5 +1,5 @@
 class QuestionMailer < ApplicationMailer
-	default from: 'loksabhaquestionhour@gmail.com'
+	default from: '"Aam Aadmi Party" <loksabhaquestionhour@gmail.com>'
 
 	def send_question(question)
 	  @question = question
