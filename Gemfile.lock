@@ -96,6 +96,7 @@ GEM
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
     pdfkit (0.8.2)
+    pg (0.18.4)
     rack (1.6.4)
     rack-pjax (0.8.0)
       nokogiri (~> 1.5)
@@ -199,6 +200,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   pdfkit
+  pg
   rails (= 4.2.4)
   rails_admin
   sass-rails (~> 5.0)
