@@ -20,7 +20,7 @@ body {
 }
 
 .about-icon {
-    background-image: url('abouticon.png');
+    background-image: image-url('abouticon.png');
     background-size: 18px 18px;
     background-repeat: no-repeat;
 	display: block;
@@ -29,7 +29,7 @@ body {
 }
 
 .read-icon {
-    background-image: url('docicon.png');
+    background-image: image-url('docicon.png');
     background-size: 18px 18px;
     background-repeat: no-repeat;
     display: block;
