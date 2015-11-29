@@ -1,14 +1,23 @@
-<img class ="check-icon" src="/assets/checkmarkicon.png">
-<h1>Thank you! Your question has been submitted.</h1>
-<p>
-	The tracking number for your question is <strong><%= params[:q] %></strong>. Use it to track the status of your question.
-	<br>
-	<% if Question.find_by(tracking_id: params[:q]).email.present? %>
-		An email has been sent to you with your tracking number as well.
-	<% else %>
-		Because you did not provide an email ID, please write down your tracking number for future reference.
-	<% end %>
-</p>
+<% if @tracking_id.present? and @question.present? %>
+
+	<img class ="check-icon" src="/assets/checkmarkicon.png">
+	<h1>Thank you! Your question has been submitted.</h1>
+	<p>
+		The tracking number for your question is <strong><%= @tracking_id %></strong>. Use it to track the status of your question.
+		<br>
+		<% if @question.email.present? %>
+			An email has been sent to you with your tracking number as well.
+		<% else %>
+			Because you did not provide an email ID, please write down your tracking number for future reference.
+		<% end %>
+	</p>
+
+<% else %>
+	
+	<h1>An error has occurred</h1>
+
+<% end %>
+
 <div id="spacing"></div>
 <img class ="aap-track" src="/assets/indianparliament.jpg">
 <p><%= link_to "Return to home", root_path %></p>

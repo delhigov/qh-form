@@ -28,6 +28,13 @@ class QuestionsController < ApplicationController
 
   def read 
     @questions = Question.where(status: "Answered")
-  end 
+  end
+
+  def receipt
+    @tracking_id = params[:q]
+    if @tracking_id.present?
+      @question = Question.find_by(tracking_id: params[:q])
+    end
+  end
   
 end
