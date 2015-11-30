@@ -13,7 +13,7 @@
 			</button>
 			<%= form_tag('questions/track', method: "get", class: "navbar-form", id: "search-form") do %>
 				<div class="input-group">
-					<input id="q" name"q" type="text" class="form-control" placeholder="Search question with ID">
+					<input id="q" name="q" type="text" class="form-control" placeholder="Search question with ID">
 					<span class="input-group-btn">
 		        <button class="btn btn-default" type="submit">
 		        	<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
@@ -40,7 +40,7 @@
 	  	placeholder: 'What is your question about?',
 	  	input_html: {
 	  								"data-toggle" => "popover",
-	  								"data-placement" => "right",
+	  								"data-placement" => "left",
 	  								"data-title" => "Sample",
 	  								"data-content" => "<img class='popover-image' src=" + asset_path("title-popover.jpg") + ">"
                     # "data-content" => image_tag("title-popover.jpg", class: "popover-image")
@@ -56,7 +56,7 @@
 	  	collection: Question::MINISTRIES,
 	  	input_html: {
 	  								"data-toggle" => "popover",
-	  								"data-placement" => "right",
+	  								"data-placement" => "left",
 	  								"data-title" => "Sample",
                     "data-content" => "<img class='popover-image' src=" + asset_path("minister-popover.jpg") + ">"
 	  							},
@@ -71,7 +71,7 @@
 	  	input_html: {
 	  								rows: 8,
 										"data-toggle" => "popover",
-										"data-placement" => "right",
+										"data-placement" => "left",
 										"data-title" => "Sample",
                     "data-content" => "<img class='popover-image' src=" + asset_path("question-popover.jpg") + ">"
 									},
