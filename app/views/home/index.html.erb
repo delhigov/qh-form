@@ -30,7 +30,7 @@
 <%= simple_form_for @question, url: '/questions/create', :html=> { id: 'question-form', class: 'demo-form mfp-hide white-popup-block' } do |f| %>
 
 	<div class="form-section">
-		<img class = "icon" src="/assets/questionicon.jpg">
+    <%= image_tag("questionicon.jpg", class: "icon") %>
 		<h2 class="form-header">Ask a question</h2>
 		<div class="form-subtext">Submit a question to be asked during Lok Sabha by your Member of Parliament.</div>
 
@@ -42,7 +42,7 @@
 	  								"data-toggle" => "popover",
 	  								"data-placement" => "right",
 	  								"data-title" => "Sample",
-	  								"data-content" => "<img class='popover-image' src='/assets/title-popover.jpg'>"
+#                    "data-content" => image_tag("title-popover.jpg", class: "popover-image")
 	  							},
 	  	class: 'form-control',
 	  	required: ''
@@ -57,7 +57,7 @@
 	  								"data-toggle" => "popover",
 	  								"data-placement" => "right",
 	  								"data-title" => "Sample",
-	  								"data-content" => "<img class='popover-image' src='/assets/minister-popover.jpg'>"
+#                    "data-content" => image_tag("minister-popover.jpg", class: "popover-image")
 	  							},
 	  	class: 'form-control',
 	  	required: ''
@@ -72,7 +72,7 @@
 										"data-toggle" => "popover",
 										"data-placement" => "right",
 										"data-title" => "Sample",
-										"data-content" => "<img class='popover-image' src='/assets/question-popover.jpg'>"
+#                    "data-content" => image_tag('question-popover.jpg', class: 'popover-image'),
 									},
 	  	class: 'form-control',
 	  	required: ''
@@ -81,7 +81,7 @@
   </div>
 
   <div class="form-section">
-	  <img class = "icon" src="/assets/usericon.png">
+    <%= image_tag("usericon.jpg", class: "icon") %>
 	  <h2 class="form-header">Personal Info</h2>
 	  <div class="form-subtext">
 	  	Provide a valid email ID to directly receive updates on your question.<br>These fields are <strong>optional</strong> and for data collection purposes only.
@@ -100,7 +100,7 @@
 		<h2 class="form-header">Does this look correct?</h2>
 		<div class="form-subtext">
 			This is how your question submission will appear.
-			<a id="confirmation-example" data-toggle="popover-click" data-placement="right" data-content="<img class='popover-image' src='/assets/example-popover.jpg'>">[Show sample]</a>
+			<a id="confirmation-example" data-toggle="popover-click" data-placement="right" data-content="<%= image_tag('example-popover.jpg', class: 'popover-image') %>"[Show sample]</a>
 		</div>
 
 		<div class="confirmation-text">
