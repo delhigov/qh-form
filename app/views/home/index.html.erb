@@ -42,7 +42,8 @@
 	  								"data-toggle" => "popover",
 	  								"data-placement" => "right",
 	  								"data-title" => "Sample",
-#                    "data-content" => image_tag("title-popover.jpg", class: "popover-image")
+	  								"data-content" => "<img class='popover-image' src=" + asset_path("title-popover.jpg") + ">"
+                    # "data-content" => image_tag("title-popover.jpg", class: "popover-image")
 	  							},
 	  	class: 'form-control',
 	  	required: ''
@@ -57,7 +58,7 @@
 	  								"data-toggle" => "popover",
 	  								"data-placement" => "right",
 	  								"data-title" => "Sample",
-#                    "data-content" => image_tag("minister-popover.jpg", class: "popover-image")
+                    "data-content" => "<img class='popover-image' src=" + asset_path("minister-popover.jpg") + ">"
 	  							},
 	  	class: 'form-control',
 	  	required: ''
@@ -72,7 +73,7 @@
 										"data-toggle" => "popover",
 										"data-placement" => "right",
 										"data-title" => "Sample",
-#                    "data-content" => image_tag('question-popover.jpg', class: 'popover-image'),
+                    "data-content" => "<img class='popover-image' src=" + asset_path("question-popover.jpg") + ">"
 									},
 	  	class: 'form-control',
 	  	required: ''
