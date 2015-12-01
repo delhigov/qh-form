@@ -38,8 +38,13 @@ class Question < ActiveRecord::Base
 	end
 
 	def status_enum
-   		[['Deferred'],['Answered'],['Scheduled']]
+		STATUSES.map { |k,v| [v] }
 	end
+
+	def ministry_enum
+		MINISTRIES.map { |m| [m] }
+	end
+
 
 	MINISTRIES = [
 		"Agriculture", 
