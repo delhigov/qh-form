@@ -19,16 +19,23 @@
 #  tracking_id      :string
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
+#  public_id        :string
 #
 
 class Question < ActiveRecord::Base
-	before_create :create_tracking_id, :preprocess_question
+	before_create :create_tracking_id, :create_public_id, :preprocess_question
   	validates_presence_of :title, :ministry, :text
 
 	def create_tracking_id
 		begin
 			self.tracking_id = SecureRandom.hex(4)
 		end while self.class.exists?(:tracking_id => tracking_id)
+	end
+
+	def create_public_id
+		begin
+			self.public_id = SecureRandom.hex(8)
+		end while self.class.exists?(:public_id => public_id)
 	end
 
 	def preprocess_question

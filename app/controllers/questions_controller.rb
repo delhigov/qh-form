@@ -4,7 +4,7 @@ class QuestionsController < ApplicationController
   end
 
   def index
-  	@question = Question.find(params[:id])
+    @questions = Question.where(status: Question::STATUSES[:answered])
   end
 
   def create
@@ -26,8 +26,11 @@ class QuestionsController < ApplicationController
     @question = Question.find_by(tracking_id: params[:q])
   end 
 
-  def read 
-    @questions = Question.where(status: "Answered")
+  def read
+    @question = Question.find_by(public_id: params[:public_id])
+    render :pdf => "loksabha-question-#{@question.public_id}",
+      :template => 'questions/pdf_layout.pdf.erb',
+      :show_as_html => params[:debug].present?
   end
 
   def receipt

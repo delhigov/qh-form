@@ -33,7 +33,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'simple_form'
 gem 'annotate'
-gem 'pdfkit'
 gem 'wkhtmltopdf-binary'
 gem 'wicked_pdf'
 gem 'devise'
@@ -60,7 +59,7 @@ end
 group :production do
   # Use POSTGRES as the database for Active Record
   gem 'pg'
-  
+
   gem 'rails_12factor'
 
 end
