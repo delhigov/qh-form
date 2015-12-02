@@ -1,12 +1,22 @@
 <% if @question.present? %>
 	<p>The status of your question is <strong><%= @question.status %></strong></p>
 	<br>
+	<% if @question.status == Question::STATUSES[:rejected] %> 
+		<strong><p>Notes from the administration:</p></strong>
+		<p><%= @question.notes %></p>
+		<br>
+	<% end %>
 	<div id="track-text"> 
 		<strong>LOK SABHA</strong>
 		<hr width="20%">
 		<p><strong><%= @question.title %></strong></p>
 		<p>Will the Minister of <%= @question.ministry %> <br>be pleased to state: </p>
 		<p><%= @question.text %></p>
+		<% if @question.status == Question::STATUSES[:answered] %>
+			<hr>
+			<strong><p>Answer:</p></strong>
+			<p><%= @question.response %></p>
+		<% end %> 
 	</div>
 <% else %>
 	There is no question associated with the tracking ID that you entered. Please try again. 
