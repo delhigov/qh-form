@@ -13,6 +13,7 @@ class QuestionsController < ApplicationController
       @question.save
       if @question.email? 
       	QuestionMailer.send_question(@question).deliver_now
+        AdminMailer.send_question(@question).deliver_now
       end
       redirect_to controller: 'questions', action: 'receipt', q: @question.tracking_id
     end

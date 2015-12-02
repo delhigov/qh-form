@@ -1,5 +1,11 @@
-</br>
-<h3><strong>Question Details</strong></h3>
-<p>Question was asked on: <%= @question.created_at %><p>
-<p><strong>Question Title: </strong><%= @question.title %></p>
-<p> Will the Minister of <%= @question.ministry.upcase %> be pleased to state: </br> <%= @question.text %></p>
+<br>
+<strong><h3 style="text-align: center">LOK SABHA</h3></strong>
+<strong><p style="text-align: center">Question No. <%= @question.id %></p></strong>
+<p style="text-align: center"><%= @question.title %></p>
+<p> Will the Minister of <%= @question.ministry.upcase %> be pleased to state:<p>
+<p> <%= @question.text %></p>
+<br>
+<hr>
+<strong><h3 style="text-align: center">ANSWER</h3></strong>
+<p> <%= @question.response %> </p>
+
