@@ -63,14 +63,18 @@ div#admin-new-container {
     text-align: left;
     font-family: "Avenir";
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     padding-top: 5px;
     padding-bottom: 5px;
     float: left;
 }
 
 header.navbar-default {
-    background-image: linear-gradient(to bottom, #fff 0, #dedede 100%);
+    background-image: linear-gradient(to bottom, #fff 0, #e2e2e2 100%);
+}
+
+.navbar-right {
+    padding-top: 5px;
 }
 
 .l1 {
