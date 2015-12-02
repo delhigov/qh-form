@@ -30,7 +30,7 @@
 <%= simple_form_for @question, url: '/questions/create', :html=> { id: 'question-form', class: 'demo-form mfp-hide white-popup-block' } do |f| %>
 
 	<div class="form-section">
-    <%= image_tag("questionicon.jpg", class: "icon") %>
+    <%= image_tag('questionicon.jpg', class: 'form-icon') %>
 		<h2 class="form-header">Ask a question</h2>
 		<div class="form-subtext">Submit a question to be asked during Lok Sabha by your Member of Parliament.</div>
 
@@ -42,8 +42,7 @@
 	  								"data-toggle" => "popover",
 	  								"data-placement" => "left",
 	  								"data-title" => "Sample",
-	  								"data-content" => "<img class='popover-image' src=" + asset_path("title-popover.jpg") + ">"
-                    # "data-content" => image_tag("title-popover.jpg", class: "popover-image")
+	  								"data-content" => "<img class='popover-image' src=#{asset_path("title-popover.jpg")}>"
 	  							},
 	  	class: 'form-control',
 	  	required: ''
@@ -58,7 +57,7 @@
 	  								"data-toggle" => "popover",
 	  								"data-placement" => "left",
 	  								"data-title" => "Sample",
-                    "data-content" => "<img class='popover-image' src=" + asset_path("minister-popover.jpg") + ">"
+                    "data-content" => "<img class='popover-image' src=#{asset_path("minister-popover.jpg")}>"
 	  							},
 	  	class: 'form-control',
 	  	required: ''
@@ -73,7 +72,7 @@
 										"data-toggle" => "popover",
 										"data-placement" => "left",
 										"data-title" => "Sample",
-                    "data-content" => "<img class='popover-image' src=" + asset_path("question-popover.jpg") + ">"
+                    "data-content" => "<img class='popover-image' src=#{asset_path("question-popover.jpg")}>"
 									},
 	  	class: 'form-control',
 	  	required: ''
@@ -82,7 +81,7 @@
   </div>
 
   <div class="form-section">
-    <%= image_tag('usericon.png', class: 'icon') %>
+    <%= image_tag('usericon.png', class: 'form-icon') %>
 	  <h2 class="form-header">Personal Info</h2>
 	  <div class="form-subtext">
 	  	Provide a valid email ID to directly receive updates on your question.<br>These fields are <strong>optional</strong> and for data collection purposes only.
@@ -97,11 +96,19 @@
 	</div>
 
 	<div class="form-section">
-    <%= image_tag('confirmicon.png', class: 'icon') %>
+    <%= image_tag('confirmicon.png', class: 'form-icon') %>
 		<h2 class="form-header">Does this look correct?</h2>
 		<div class="form-subtext">
 			This is how your question submission will appear.
-			<a id="confirmation-example" data-toggle="popover-click" data-placement="right" data-content="<%= image_tag('example-popover.jpg', class: 'popover-image') %>"[Show sample]</a>
+			<%= content_tag(
+				:a,
+				"[Show sample]",
+				id: "confirmation-example",
+				"data-toggle" => "popover-click",
+				"data-placement" => "right",
+				"data-content" => "<img class='popover-image' src=#{asset_path("question-popover.jpg")}>"
+				)
+			%>
 		</div>
 
 		<div class="confirmation-text">

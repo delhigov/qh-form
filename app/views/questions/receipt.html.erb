@@ -1,6 +1,6 @@
 <% if @tracking_id.present? and @question.present? %>
 
-	<img id="receipt-check-icon" src="/assets/checkmarkicon.png">
+	<%= image_tag("questionicon.jpg", id: "receipt-check-icon") %>
 	<h1>Thank you! Your question has been submitted.</h1>
 	<p>
 		The tracking number for your question is <strong><%= @tracking_id %></strong>. Use it to track the status of your question.
