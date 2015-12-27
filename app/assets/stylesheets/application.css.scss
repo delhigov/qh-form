@@ -20,6 +20,9 @@
 body {
     text-align: center; /* this is required for old versions of IE */
     padding-top: 50px;
+    background-image: image-url('parliament-cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .about-icon {
@@ -67,10 +70,6 @@ div#admin-new-container {
     padding-top: 5px;
     padding-bottom: 5px;
     float: left;
-}
-
-header.navbar-default {
-    background-image: linear-gradient(to bottom, #fff 0, #e2e2e2 100%);
 }
 
 .navbar-right {

@@ -5,4 +5,4 @@
 $(document).on 'ready page:load', () ->
 	navbar = $('.navbar')
 	if navbar
-		navbar.toggle($('#receipt-check-icon').length == 0)
+		navbar.toggle($('#receipt-check-icon').length == 0 and $('#receipt-error-icon').length == 0)

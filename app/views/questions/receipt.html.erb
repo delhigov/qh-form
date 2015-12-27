@@ -14,7 +14,9 @@
 
 <% else %>
 	
+	<%= image_tag("red-x.png", id: "receipt-error-icon") %>
 	<h1>An error has occurred</h1>
+	<p>The specified tracking ID does not exist.</p>
 
 <% end %>
 
